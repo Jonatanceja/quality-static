@@ -82,7 +82,7 @@
                     </div>
                     <h3 class="text-2xl font-black text-white mb-3">Wind Mitigation Inspection</h3>
                     <p class="text-white/75 leading-relaxed mb-6">
-                        Proactively protect your property and lower your insurance premiums by documenting your home's hurricane-resistant features. Required for maximum insurance credits under Florida law.
+                        Proactively protect your property and lower your insurance premiums by documenting your home's hurricane resistant features. Required for maximum insurance credits under Florida law.
                     </p>
                     <ul class="space-y-2 mb-8">
                         @foreach(['Roof Covering & Deck Attachment', 'Roof-to-Wall Connection', 'Opening Protection (Windows & Doors)', 'OIR-B1-1802 Form Included'] as $item)
@@ -174,7 +174,7 @@
                     Every Home. Every System. Fully Inspected.
                 </h2>
                 <p class="text-gray-500 leading-relaxed mb-8">
-                    From the moment you book to the moment you receive your report, we're committed to accuracy, speed, and clarity. Our digital-first process means you never wait long for answers.
+                    From the moment you book to the moment you receive your report, we're committed to accuracy, speed, and clarity. Our digital first process means you never wait long for answers.
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     @foreach([
@@ -196,7 +196,7 @@
                     ['icon' => 'cert',  'title' => 'Certified Master Inspectors', 'desc' => 'Licensed by the State of Florida and certified through InterNACHI and ASHI, the most respected bodies in the industry.'],
                     ['icon' => 'cam',   'title' => 'Thermal Imaging Included',    'desc' => 'Every inspection includes thermal imaging at no extra cost, uncovering hidden moisture and insulation gaps.'],
                     ['icon' => 'clock', 'title' => 'Same-Day Report Delivery',    'desc' => 'Receive your detailed digital report, complete with photos, within 24 hours of your inspection.'],
-                    ['icon' => 'star',  'title' => '5-Star Rated Service',         'desc' => 'Consistently top-rated across Google and Yelp by hundreds of South Florida homeowners and real estate professionals.'],
+                    ['icon' => 'star',  'title' => '5-Star Rated Service',         'desc' => 'Consistently top rated across Google and Yelp by hundreds of South Florida homeowners and real estate professionals.'],
                 ] as $item)
                     <div class="flex items-start gap-4 bg-white rounded-2xl p-5 border border-gray-100">
                         <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center"

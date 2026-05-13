@@ -15,7 +15,7 @@
                 </p>
                 <p class="mt-4 text-lg text-gray-500 leading-relaxed">
                     Our certified inspectors use the latest tools and follow InterNACHI standards to deliver
-                    comprehensive, easy-to-read reports, helping buyers, sellers, and agents make informed decisions
+                    comprehensive, easy to read reports, helping buyers, sellers, and agents make informed decisions
                     with confidence.
                 </p>
 

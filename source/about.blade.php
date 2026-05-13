@@ -43,7 +43,7 @@
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
                 <p class="text-gray-500 leading-relaxed">
                     To provide homeowners and real estate professionals with the most accurate, thorough,
-                    and timely inspection reports, empowering informed decisions and long-term peace of mind.
+                    and timely inspection reports, empowering informed decisions and long term peace of mind.
                 </p>
             </div>
 
@@ -88,7 +88,7 @@
             @foreach ([
                 ['icon' => 'scale',   'title' => 'Integrity',     'desc' => 'Unbiased reporting that puts your safety and investment first, always.'],
                 ['icon' => 'target',  'title' => 'Accuracy',      'desc' => 'Precision in every measurement and detail of your property evaluation.'],
-                ['icon' => 'cpu',     'title' => 'Innovation',    'desc' => 'Leveraging cutting-edge digital reporting and thermal imaging technology.'],
+                ['icon' => 'cpu',     'title' => 'Innovation',    'desc' => 'Leveraging cutting edge digital reporting and thermal imaging technology.'],
                 ['icon' => 'users',   'title' => 'Client Focus',  'desc' => 'Exceptional service designed to provide clarity throughout the process.'],
             ] as $value)
                 <div class="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-md transition-shadow duration-300 text-center">
@@ -153,7 +153,7 @@
                 <p class="text-gray-500 leading-relaxed mb-5">
                     Founded in South Florida, Calidad Inspections grew from a commitment to excellence in structural
                     evaluation. We recognized the unique challenges of the Florida landscape, from humidity and
-                    hurricanes to high-salinity coastal environments.
+                    hurricanes to high salinity coastal environments.
                 </p>
                 <p class="text-gray-500 leading-relaxed mb-8">
                     Our team specializes in critical regional evaluations, including comprehensive

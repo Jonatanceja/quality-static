@@ -107,14 +107,14 @@
                             </svg>
                             <span class="text-xs font-black uppercase tracking-widest" style="color: var(--color-secondary)">Phase Two</span>
                         </div>
-                        <h2 class="text-2xl font-black text-gray-900 mb-3">2. On-site Inspection</h2>
+                        <h2 class="text-2xl font-black text-gray-900 mb-3">2. On Site Inspection</h2>
                         <p class="text-gray-500 leading-relaxed mb-6">
                             Certified inspectors arrive with precision tools and digital tablets. Every finding
-                            is logged, photographed, and tagged with metadata in real-time, ensuring no detail
+                            is logged, photographed, and tagged with metadata in real time, ensuring no detail
                             of the property's condition is overlooked.
                         </p>
                         <ul class="space-y-3">
-                            @foreach(['Standardized 400-point physical check', 'High-resolution thermal imaging capture'] as $point)
+                            @foreach(['Standardized 400-point physical check', 'High resolution thermal imaging capture'] as $point)
                                 <li class="flex items-center gap-3 text-sm text-gray-600">
                                     <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
@@ -143,8 +143,8 @@
                         </div>
                         <h2 class="text-2xl font-black text-gray-900 mb-3">3. Digital Report Generation</h2>
                         <p class="text-gray-500 leading-relaxed mb-6">
-                            Raw data is synthesized into a readable, authoritative report. We use high-contrast
-                            modules and color-coded status chips (Orange for Action Required, Teal for Passed)
+                            Raw data is synthesized into a readable, authoritative report. We use high contrast
+                            modules and color coded status chips (Orange for Action Required, Teal for Passed)
                             to help you prioritize home repairs.
                         </p>
                         <div class="flex items-center justify-between p-4 rounded-xl border border-gray-100 bg-gray-50">

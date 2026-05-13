@@ -28,13 +28,13 @@ return [
         [
             'slug' => '4-point',
             'title' => '4-Point Inspection',
-            'description' => 'Essential for older homes, our 4-point inspections assess the primary systems: electrical, plumbing, HVAC, and roof. Ensure your home is coverage-ready',
+            'description' => 'Essential for older homes, our 4-point inspections assess the primary systems: electrical, plumbing, HVAC, and roof. Ensure your home is coverage ready',
             'cta' => 'Learn About 4-Point',
         ],
         [
             'slug'        => 'wind-mitigation',
             'title'       => 'Wind Mitigation Inspection',
-            'description' => "Proactively protect your property and lower your insurance premiums by documenting your home\u{0027}s hurricane-resistant features.",
+            'description' => "Proactively protect your property and lower your insurance premiums by documenting your home\u{0027}s hurricane resistant features.",
             'cta'         => 'Learn About Wind Mitigation',
         ],
     ],
@@ -43,12 +43,12 @@ return [
         [
             'icon' => 'home',
             'title' => 'Home Inspections',
-            'description' => 'Comprehensive top-to-bottom evaluations of residential properties before you buy or sell.',
+            'description' => 'Comprehensive top to bottom evaluations of residential properties before you buy or sell.',
         ],
         [
             'icon' => 'shield',
             'title' => 'Structural Assessment',
-            'description' => 'In-depth analysis of foundations, framing, roofing, and structural integrity.',
+            'description' => 'In depth analysis of foundations, framing, roofing, and structural integrity.',
         ],
         [
             'icon' => 'zap',
@@ -153,7 +153,7 @@ return [
         ],
         [
             'title'       => 'First-Time Home Buyer Friendly',
-            'description' => 'Trained to guide first-time buyers step by step, making the inspection process clear and stress-free.',
+            'description' => 'Trained to guide first-time buyers step by step, making the inspection process clear and stress free.',
             'icon'        => 'home-heart',
         ],
         [
@@ -163,7 +163,7 @@ return [
         ],
         [
             'title'       => 'Wind Mitigation Inspector',
-            'description' => 'Qualified to document hurricane-resistant features that can significantly reduce your insurance premium.',
+            'description' => 'Qualified to document hurricane resistant features that can significantly reduce your insurance premium.',
             'icon'        => 'wind',
         ],
         [

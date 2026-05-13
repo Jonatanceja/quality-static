@@ -43,8 +43,8 @@
                 </p>
                 <ul class="space-y-3">
                     @foreach([
-                        'Completed 1,000+ fee-paid inspections',
-                        '3+ years of full-time inspection experience',
+                        'Completed 1,000+ fee paid inspections',
+                        '3+ years of full time inspection experience',
                         'Passed rigorous written examination',
                         'Committed to ongoing continuing education',
                     ] as $point)

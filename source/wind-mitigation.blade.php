@@ -59,13 +59,13 @@
                     Unlock Substantial Premium Credits
                 </h2>
                 <p class="text-gray-500 leading-relaxed mb-8">
-                    Florida law requires insurance companies to offer discounts for homes with wind-resistant features. Our Wind Mitigation Inspection verifies the construction of your home to ensure you receive the maximum credits allowed by your carrier, sometimes up to 40% off your annual premium.
+                    Florida law requires insurance companies to offer discounts for homes with wind resistant features. Our Wind Mitigation Inspection verifies the construction of your home to ensure you receive the maximum credits allowed by your carrier, sometimes up to 40% off your annual premium.
                 </p>
                 <ul class="space-y-4">
                     @foreach([
-                        ['icon' => 'percent', 'title' => 'Average Savings Up to 40%', 'desc' => 'Documented wind-resistant features translate directly into lower annual insurance premiums on your policy.'],
+                        ['icon' => 'percent', 'title' => 'Average Savings Up to 40%', 'desc' => 'Documented wind resistant features translate directly into lower annual insurance premiums on your policy.'],
                         ['icon' => 'form',    'title' => 'Industry-Standard OIR-B1-1802 Form', 'desc' => 'We complete the official Florida form accepted by all insurance carriers statewide.'],
-                        ['icon' => 'shield',  'title' => 'Increases Structural Confidence', 'desc' => 'Beyond savings, the report confirms your home can withstand South Florida\'s hurricane-force winds.'],
+                        ['icon' => 'shield',  'title' => 'Increases Structural Confidence', 'desc' => 'Beyond savings, the report confirms your home can withstand South Florida\'s hurricane force winds.'],
                     ] as $point)
                         <li class="flex items-start gap-4">
                             <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center"
@@ -124,7 +124,7 @@
             </span>
             <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Precision Evaluation Areas</h2>
             <p class="text-gray-500 max-w-lg mx-auto leading-relaxed">
-                Our inspection covers the four structural areas defined by the Florida OIR-B1-1802 form, the industry-standard document accepted by all Florida insurance carriers.
+                Our inspection covers the four structural areas defined by the Florida OIR-B1-1802 form, the industry standard document accepted by all Florida insurance carriers.
             </p>
         </div>
 
@@ -148,7 +148,7 @@
                     Verification of the roof installation date and compliance with the 2001 Florida Building Code (or subsequent updates) to ensure impact resistance.
                 </p>
                 <ul class="space-y-2">
-                    @foreach(['Roofing material type and permit date', 'Florida Building Code compliance', 'Age and condition of covering', 'Evidence of impact-resistant rating'] as $item)
+                    @foreach(['Roofing material type and permit date', 'Florida Building Code compliance', 'Age and condition of covering', 'Evidence of impact resistant rating'] as $item)
                         <li class="flex items-center gap-2.5 text-sm text-gray-600">
                             <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background-color: var(--color-primary)"></span>
                             {{ $item }}
@@ -225,10 +225,10 @@
                     <h3 class="text-xl font-black text-white">Opening Protection</h3>
                 </div>
                 <p class="text-white/75 leading-relaxed mb-5">
-                    Evaluation of impact-rated doors, windows, and skylights, or the presence of approved shutters for all glazed openings.
+                    Evaluation of impact rated doors, windows, and skylights, or the presence of approved shutters for all glazed openings.
                 </p>
                 <ul class="space-y-2">
-                    @foreach(['Impact-rated windows and doors', 'Hurricane shutter type and coverage', 'Skylight and garage door ratings', 'Florida Product Approval numbers'] as $item)
+                    @foreach(['Impact rated windows and doors', 'Hurricane shutter type and coverage', 'Skylight and garage door ratings', 'Florida Product Approval numbers'] as $item)
                         <li class="flex items-center gap-2.5 text-sm text-white/80">
                             <span class="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-white/50"></span>
                             {{ $item }}

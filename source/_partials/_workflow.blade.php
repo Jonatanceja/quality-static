@@ -61,7 +61,7 @@
                     </div>
                     <h3 class="text-white font-bold text-lg mb-2">Expert Inspection</h3>
                     <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.50);">
-                        Our certified pros perform a rigorous on-site audit.
+                        Our certified pros perform a rigorous on site audit.
                     </p>
                 </div>
 
@@ -75,7 +75,7 @@
                     </div>
                     <h3 class="text-white font-bold text-lg mb-2">Instant Report</h3>
                     <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.50);">
-                        Receive interactive, high-detail digital findings.
+                        Receive interactive, high detail digital findings.
                     </p>
                 </div>
 
@@ -89,7 +89,7 @@
                     </div>
                     <h3 class="text-white font-bold text-lg mb-2">Finalization</h3>
                     <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.50);">
-                        Clear next steps and insurance-ready documents.
+                        Clear next steps and insurance ready documents.
                     </p>
                 </div>
 

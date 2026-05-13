@@ -199,7 +199,7 @@
                         <div>
                             <h3 class="font-black text-gray-900 uppercase tracking-wide mb-2" style="color: var(--color-primary)">Smart Reports</h3>
                             <p class="text-sm text-gray-500 leading-relaxed">
-                                Interactive PDF reports with high-resolution photos and clear action items.
+                                Interactive PDF reports with high resolution photos and clear action items.
                             </p>
                         </div>
                     </div>
