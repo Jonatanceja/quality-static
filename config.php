@@ -2,7 +2,7 @@
 
 return [
     'production' => false,
-    'baseUrl' => '',
+    'baseUrl' => 'https://qualityinspections.info',
     'title' => 'Calidad Inspections',
     'description' => 'Professional home inspection services you can trust.',
     'language' => 'en',

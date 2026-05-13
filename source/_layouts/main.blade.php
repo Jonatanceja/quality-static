@@ -8,13 +8,13 @@
         <meta property="og:title" content="{{ $page->og_title ?? $page->title }}">
         <meta property="og:description" content="{{ $page->og_description ?? $page->description }}">
         <meta property="og:url" content="{{ $page->getUrl() }}">
-        <meta property="og:image" content="{{ $page->og_image ?? '/assets/images/og-image.jpg' }}">
+        <meta property="og:image" content="{{ $page->og_image ?? 'https://qualityinspections.info/assets/images/quality-inspections-og.jpg' }}">
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Calidad Inspections">
+        <meta property="og:site_name" content="Quality Inspections">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="{{ $page->og_title ?? $page->title }}">
         <meta name="twitter:description" content="{{ $page->og_description ?? $page->description }}">
-        <meta name="twitter:image" content="{{ $page->og_image ?? '/assets/images/og-image.jpg' }}">
+        <meta name="twitter:image" content="{{ $page->og_image ?? 'https://qualityinspections.info/assets/images/quality-inspections-og.jpg' }}">
         <title>{{ $page->title }}</title>
         <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
         @viteRefresh()
