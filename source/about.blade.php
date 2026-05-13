@@ -152,14 +152,14 @@
                 </h2>
                 <p class="text-gray-500 leading-relaxed mb-5">
                     Founded in South Florida, Calidad Inspections grew from a commitment to excellence in structural
-                    evaluation. We recognized the unique challenges of the Florida landscape — from humidity and
+                    evaluation. We recognized the unique challenges of the Florida landscape, from humidity and
                     hurricanes to high-salinity coastal environments.
                 </p>
                 <p class="text-gray-500 leading-relaxed mb-8">
                     Our team specializes in critical regional evaluations, including comprehensive
                     <span class="font-semibold" style="color: var(--color-primary)">4-Point Inspections</span> and
                     <span class="font-semibold" style="color: var(--color-secondary)">Wind Mitigation</span> reports.
-                    These aren't just boxes to check — they are the safeguards of your property's longevity
+                    These aren't just boxes to check. They are the safeguards of your property's longevity
                     and your family's safety.
                 </p>
 

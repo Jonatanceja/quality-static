@@ -36,7 +36,7 @@
                     Certified Master Inspector
                 </h3>
                 <p class="text-gray-500 leading-relaxed mb-5">
-                    The Certified Master Inspector® designation is the highest credential awarded by InterNACHI — the world's leading home inspection association. It is earned only by inspectors who demonstrate exceptional experience, education, and commitment to excellence.
+                    The Certified Master Inspector® designation is the highest credential awarded by InterNACHI, the world's leading home inspection association. It is earned only by inspectors who demonstrate exceptional experience, education, and commitment to excellence.
                 </p>
                 <p class="text-gray-500 leading-relaxed mb-8">
                     Fewer than 2% of all home inspectors in the country hold this designation, placing Calidad Inspections among the most qualified professionals in the industry.

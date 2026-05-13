@@ -10,12 +10,12 @@
                     Inspectors You Can Trust,<br>Results You Can Rely On
                 </h2>
                 <p class="mt-6 text-lg text-gray-500 leading-relaxed">
-                    With over 12 years of experience and more than 2,400 completed inspections, Calidad Inspections
+                    With over 12 years of experience and more than 15,000 completed inspections, Calidad Inspections
                     has built its reputation on accuracy, transparency, and outstanding client care.
                 </p>
                 <p class="mt-4 text-lg text-gray-500 leading-relaxed">
                     Our certified inspectors use the latest tools and follow InterNACHI standards to deliver
-                    comprehensive, easy-to-read reports — helping buyers, sellers, and agents make informed decisions
+                    comprehensive, easy-to-read reports, helping buyers, sellers, and agents make informed decisions
                     with confidence.
                 </p>
 

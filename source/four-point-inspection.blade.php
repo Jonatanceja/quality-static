@@ -53,12 +53,12 @@
                     Why Do Insurance Carriers Require a 4-Point?
                 </h2>
                 <p class="text-gray-500 leading-relaxed mb-8">
-                    Insurance companies use 4-point inspections to assess the risk of insuring older homes. By evaluating the four primary systems, they can determine the likelihood of a claim and set premiums accordingly — or decide whether to offer coverage at all.
+                    Insurance companies use 4-point inspections to assess the risk of insuring older homes. By evaluating the four primary systems, they can determine the likelihood of a claim and set premiums accordingly, or decide whether to offer coverage at all.
                 </p>
                 <ul class="space-y-4">
                     @foreach([
                         ['icon' => 'shield', 'title' => 'Risk Assessment', 'desc' => 'Insurers need to know the condition of critical systems before underwriting a policy on older properties.'],
-                        ['icon' => 'dollar', 'title' => 'Premium Calculation', 'desc' => 'The inspection results directly influence your insurance premium — a clean report can mean significant savings.'],
+                        ['icon' => 'dollar', 'title' => 'Premium Calculation', 'desc' => 'The inspection results directly influence your insurance premium. A clean report can mean significant savings.'],
                         ['icon' => 'check', 'title' => 'Coverage Eligibility', 'desc' => 'Many carriers in Florida will not issue or renew a policy without a current 4-point inspection on file.'],
                     ] as $point)
                         <li class="flex items-start gap-4">
@@ -139,7 +139,7 @@
                     <h3 class="text-xl font-black text-gray-900">HVAC Systems</h3>
                 </div>
                 <p class="text-gray-500 leading-relaxed mb-5">
-                    We assess the age, condition, and functionality of your heating, ventilation, and air conditioning units — including ductwork, filters, and safety controls.
+                    We assess the age, condition, and functionality of your heating, ventilation, and air conditioning units, including ductwork, filters, and safety controls.
                 </p>
                 <ul class="space-y-2">
                     @foreach(['Age and condition of all HVAC units', 'Ductwork integrity and airflow', 'Safety shut-offs and controls', 'Evidence of leaks or corrosion'] as $item)
@@ -166,7 +166,7 @@
                     <h3 class="text-xl font-black text-gray-900">Electrical System</h3>
                 </div>
                 <p class="text-gray-500 leading-relaxed mb-5">
-                    Our inspector evaluates the main panel, wiring type, and overall electrical safety — identifying outdated or hazardous systems that could affect insurability.
+                    Our inspector evaluates the main panel, wiring type, and overall electrical safety, identifying outdated or hazardous systems that could affect insurability.
                 </p>
                 <ul class="space-y-2">
                     @foreach(['Main electrical panel and breakers', 'Wiring type (copper, aluminum, knob-and-tube)', 'GFCI protection in wet areas', 'Double-tapped breakers or open knockouts'] as $item)
@@ -193,7 +193,7 @@
                     <h3 class="text-xl font-black text-gray-900">Plumbing Integrity</h3>
                 </div>
                 <p class="text-gray-500 leading-relaxed mb-5">
-                    We identify the pipe material, check for active leaks, and evaluate the water heater — all factors that insurers use to assess potential water damage risk.
+                    We identify the pipe material, check for active leaks, and evaluate the water heater, all factors that insurers use to assess potential water damage risk.
                 </p>
                 <ul class="space-y-2">
                     @foreach(['Pipe material (copper, CPVC, polybutylene)', 'Water heater age and condition', 'Visible leaks and supply shutoffs', 'Drain lines and drainage conditions'] as $item)
@@ -269,7 +269,7 @@
                         </div>
                     @endforeach
                 </div>
-                <p class="text-xs text-gray-400 mt-5">Don't see your city? <a href="/contact" class="font-semibold underline" style="color: var(--color-primary)">Contact us</a> — we likely cover it.</p>
+                <p class="text-xs text-gray-400 mt-5">Don't see your city? <a href="/contact" class="font-semibold underline" style="color: var(--color-primary)">Contact us</a>, we likely cover it.</p>
             </div>
 
             {{-- Right: map --}}

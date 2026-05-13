@@ -12,7 +12,7 @@
             Our Inspection Services
         </h1>
         <p class="text-lg text-gray-500 leading-relaxed max-w-xl">
-            Comprehensive, certified inspections for every stage of homeownership — from purchase to insurance renewal.
+            Comprehensive, certified inspections for every stage of homeownership, from purchase to insurance renewal.
         </p>
     </div>
 </section>
@@ -44,7 +44,7 @@
                     </div>
                     <h3 class="text-2xl font-black text-gray-900 mb-3">4-Point Inspection</h3>
                     <p class="text-gray-500 leading-relaxed mb-6">
-                        Required by most insurance carriers for homes over 25 years old. We assess the four critical systems — HVAC, electrical, plumbing, and roof — that determine your home's insurability and premium rates.
+                        Required by most insurance carriers for homes over 25 years old. We assess the four critical systems including HVAC, electrical, plumbing, and roof, that determine your home's insurability and premium rates.
                     </p>
                     <ul class="space-y-2 mb-8">
                         @foreach(['HVAC Systems', 'Electrical Panel & Wiring', 'Plumbing & Water Heater', 'Roof Condition & Age'] as $item)
@@ -171,14 +171,14 @@
                     Why Calidad
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-6">
-                    Every Inspection. Every System. Done Right.
+                    Every Home. Every System. Fully Inspected.
                 </h2>
                 <p class="text-gray-500 leading-relaxed mb-8">
                     From the moment you book to the moment you receive your report, we're committed to accuracy, speed, and clarity. Our digital-first process means you never wait long for answers.
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     @foreach([
-                        ['stat' => '2,400+', 'label' => 'Inspections Completed'],
+                        ['stat' => '15,000+', 'label' => 'Inspections Completed'],
                         ['stat' => '24h',    'label' => 'Report Delivery'],
                         ['stat' => '12+',    'label' => 'Years of Experience'],
                         ['stat' => '98%',    'label' => 'Client Satisfaction'],
@@ -193,9 +193,9 @@
 
             <div class="space-y-4">
                 @foreach([
-                    ['icon' => 'cert',  'title' => 'Certified Master Inspectors', 'desc' => 'Licensed by the State of Florida and certified through InterNACHI and ASHI — the most respected bodies in the industry.'],
+                    ['icon' => 'cert',  'title' => 'Certified Master Inspectors', 'desc' => 'Licensed by the State of Florida and certified through InterNACHI and ASHI, the most respected bodies in the industry.'],
                     ['icon' => 'cam',   'title' => 'Thermal Imaging Included',    'desc' => 'Every inspection includes thermal imaging at no extra cost, uncovering hidden moisture and insulation gaps.'],
-                    ['icon' => 'clock', 'title' => 'Same-Day Report Delivery',    'desc' => 'Receive your detailed digital report — complete with photos — within 24 hours of your inspection.'],
+                    ['icon' => 'clock', 'title' => 'Same-Day Report Delivery',    'desc' => 'Receive your detailed digital report, complete with photos, within 24 hours of your inspection.'],
                     ['icon' => 'star',  'title' => '5-Star Rated Service',         'desc' => 'Consistently top-rated across Google and Yelp by hundreds of South Florida homeowners and real estate professionals.'],
                 ] as $item)
                     <div class="flex items-start gap-4 bg-white rounded-2xl p-5 border border-gray-100">

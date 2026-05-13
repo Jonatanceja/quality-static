@@ -12,7 +12,7 @@
             Schedule Your Inspection
         </h1>
         <p class="text-lg text-gray-500 leading-relaxed max-w-xl">
-            Book directly through our online scheduler — pick your date, time, and service in minutes.
+            Book directly through our online scheduler. Pick your date, time, and service in minutes.
         </p>
     </div>
 </section>

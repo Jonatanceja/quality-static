@@ -36,7 +36,7 @@
                     <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mt-1">Insurance Essential</p>
                 </div>
                 <div class="mb-6">
-                    <span class="text-5xl font-black" style="color: var(--color-primary)">$175</span>
+                    <span class="text-5xl font-black" style="color: var(--color-primary)">$150</span>
                 </div>
                 <ul class="space-y-3 flex-1 mb-8">
                     @foreach(['HVAC System', 'Electrical Panels & Wiring', 'Plumbing Connections', 'Roof Condition'] as $item)
@@ -95,8 +95,8 @@
                     <p class="text-xs font-bold uppercase tracking-widest text-white/60 mt-1">4-Point + Wind Mit</p>
                 </div>
                 <div class="flex items-baseline gap-3 mb-6">
-                    <span class="text-5xl font-black text-white">$275</span>
-                    <span class="text-lg font-bold text-white/40 line-through">$325</span>
+                    <span class="text-5xl font-black text-white">$225</span>
+                    <span class="text-lg font-bold text-white/40 line-through">$300</span>
                 </div>
                 <ul class="space-y-3 flex-1 mb-6">
                     @foreach(['Complete 4-Point Report', 'Full Wind Mitigation Study', 'Digital Report Delivery', 'Insurance Submission Ready'] as $item)
@@ -109,7 +109,7 @@
                     @endforeach
                 </ul>
                 <div class="text-center py-2 rounded-lg text-xs font-black uppercase tracking-widest text-white/70 bg-white/10 mb-4">
-                    Save $50 Instantly
+                    Save $75 Instantly
                 </div>
                 <a href="/contact"
                    class="block text-center py-3 rounded-xl text-sm font-black bg-white transition-opacity duration-200 hover:opacity-90"

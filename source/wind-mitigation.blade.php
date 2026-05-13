@@ -59,7 +59,7 @@
                     Unlock Substantial Premium Credits
                 </h2>
                 <p class="text-gray-500 leading-relaxed mb-8">
-                    Florida law requires insurance companies to offer discounts for homes with wind-resistant features. Our Wind Mitigation Inspection verifies the construction of your home to ensure you receive the maximum credits allowed by your carrier — sometimes up to 40% off your annual premium.
+                    Florida law requires insurance companies to offer discounts for homes with wind-resistant features. Our Wind Mitigation Inspection verifies the construction of your home to ensure you receive the maximum credits allowed by your carrier, sometimes up to 40% off your annual premium.
                 </p>
                 <ul class="space-y-4">
                     @foreach([
@@ -124,7 +124,7 @@
             </span>
             <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Precision Evaluation Areas</h2>
             <p class="text-gray-500 max-w-lg mx-auto leading-relaxed">
-                Our inspection covers the four structural areas defined by the Florida OIR-B1-1802 form — the industry-standard document accepted by all Florida insurance carriers.
+                Our inspection covers the four structural areas defined by the Florida OIR-B1-1802 form, the industry-standard document accepted by all Florida insurance carriers.
             </p>
         </div>
 
@@ -172,7 +172,7 @@
                     <h3 class="text-xl font-black text-gray-900">Roof Deck Attachment</h3>
                 </div>
                 <p class="text-gray-500 leading-relaxed mb-5">
-                    Analysis of the nail size and spacing used to secure the roof decking to the trusses — critical for preventing uplift during high winds.
+                    Analysis of the nail size and spacing used to secure the roof decking to the trusses, critical for preventing uplift during high winds.
                 </p>
                 <ul class="space-y-2">
                     @foreach(['Nail size, type, and spacing pattern', 'Deck-to-truss connection quality', 'Single vs. double layer decking', 'Code compliance of attachment method'] as $item)
@@ -199,7 +199,7 @@
                     <h3 class="text-xl font-black text-gray-900">Roof-to-Wall Connection</h3>
                 </div>
                 <p class="text-gray-500 leading-relaxed mb-5">
-                    Identifying the hardware — clips, single wraps, or double wraps — used to anchor the roof structure to the home's walls.
+                    Identifying the hardware including clips, single wraps, or double wraps, used to anchor the roof structure to the home's walls.
                 </p>
                 <ul class="space-y-2">
                     @foreach(['Clip, single-wrap, or double-wrap type', 'Number of wraps per truss', 'Structural anchor strength rating', 'Connection method and code compliance'] as $item)
@@ -225,7 +225,7 @@
                     <h3 class="text-xl font-black text-white">Opening Protection</h3>
                 </div>
                 <p class="text-white/75 leading-relaxed mb-5">
-                    Evaluation of impact-rated doors, windows, and skylights — or the presence of approved shutters for all glazed openings.
+                    Evaluation of impact-rated doors, windows, and skylights, or the presence of approved shutters for all glazed openings.
                 </p>
                 <ul class="space-y-2">
                     @foreach(['Impact-rated windows and doors', 'Hurricane shutter type and coverage', 'Skylight and garage door ratings', 'Florida Product Approval numbers'] as $item)

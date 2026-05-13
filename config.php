@@ -8,9 +8,9 @@ return [
     'language' => 'en',
     'collections' => [],
 
-    'phone'     => '(555) 123-4567',
-    'phone_raw' => '5551234567',
-    'email'     => 'info@calidadinspections.com',
+    'phone'     => '(954) 598-2278',
+    'phone_raw' => '9545982278',
+    'email'     => 'service@qualityinspections.info',
 
     'nav' => [
         ['label' => 'Services', 'href' => '/services', 'children' => [
@@ -68,7 +68,7 @@ return [
         [
             'icon' => 'search',
             'title' => 'Pre-Listing Inspection',
-            'description' => 'Get ahead of issues before listing your property — increase buyer confidence.',
+            'description' => 'Get ahead of issues before listing your property and increase buyer confidence.',
         ],
     ],
 
@@ -158,7 +158,7 @@ return [
         ],
         [
             'title'       => '4-Point Inspector',
-            'description' => 'Certified to assess the four key systems — roof, electrical, plumbing, and HVAC — required by most insurers.',
+            'description' => 'Certified to assess the four key systems: roof, electrical, plumbing, and HVAC, required by most insurers.',
             'icon'        => 'clipboard',
         ],
         [
@@ -212,7 +212,7 @@ return [
     ],
 
     'stats' => [
-        ['value' => '2,400+', 'label' => 'Inspections Completed'],
+        ['value' => '15,000+', 'label' => 'Inspections Completed'],
         ['value' => '12+', 'label' => 'Years of Experience'],
         ['value' => '98%', 'label' => 'Client Satisfaction'],
         ['value' => '24h', 'label' => 'Report Delivery'],
