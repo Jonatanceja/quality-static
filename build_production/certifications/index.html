@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="/certifications">
+        <meta name="description" content="Professional home inspection services you can trust.">
+        <title>Calidad Inspections</title>
+        <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+                <link rel="stylesheet" href="/assets/build/assets/main-IAhpQiXf.css">
+        <script defer type="module" src="/assets/build/assets/main-ByNcbeG_.js"></script>
+    </head>
+    <body class="text-gray-900 font-sans antialiased">
+        <div
+    x-data="{ scrolled: false, mobileOpen: false }"
+    @scroll.window="scrolled = window.scrollY > 60"
+    class="fixed top-0 left-0 right-0 z-50"
+>
+
+    
+    <header
+        x-show="!scrolled"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-full"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 -translate-y-full"
+        class="bg-white/95 backdrop-blur-sm shadow-sm"
+    >
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <nav class="h-24 flex items-center justify-between">
+
+                <a href="/" class="flex items-center">
+                    <img src="/assets/images/quality.svg" alt="Calidad Inspections" class="h-20 w-auto">
+                </a>
+
+                <ul class="hidden md:flex items-center gap-8">
+                                                                        <li x-data="{ open: false }" class="relative">
+                                <button
+                                    @click="open = !open"
+                                    @click.outside="open = false"
+                                    class="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200"
+                                >
+                                    Services
+                                    <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div
+                                    x-show="open"
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 -translate-y-1"
+                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                    x-transition:leave="transition ease-in duration-100"
+                                    x-transition:leave-start="opacity-100 translate-y-0"
+                                    x-transition:leave-end="opacity-0 -translate-y-1"
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50"
+                                    x-cloak
+                                >
+                                                                            <a href="/services"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            All Services
+                                        </a>
+                                                                            <a href="/four-point-inspection"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            4-Point Inspection
+                                        </a>
+                                                                            <a href="/wind-mitigation"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Wind Mitigation
+                                        </a>
+                                                                    </div>
+                            </li>
+                                                                                                <li>
+                                <a href="/about"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    About
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/workflow"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Workflow
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/pricing"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Pricing
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/contact"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Contact
+                                </a>
+                            </li>
+                                                            </ul>
+
+                <a href="/contact"
+                   class="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors duration-200"
+                   style="background-color: var(--color-primary)">
+                    Get an Inspection
+                </a>
+
+                <button
+                    @click="mobileOpen = !mobileOpen"
+                    :aria-expanded="mobileOpen"
+                    class="md:hidden p-2 rounded-md text-gray-600"
+                    aria-label="Toggle menu"
+                >
+                    <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <svg x-show="mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+
+            </nav>
+        </div>
+
+        
+        <div
+            x-show="mobileOpen"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-3"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-3"
+            class="md:hidden border-t border-gray-100 bg-white"
+            x-cloak
+        >
+            <ul class="flex flex-col px-6 py-4 gap-1">
+                                                            <li x-data="{ open: false }">
+                            <button @click="open = !open"
+                                    class="flex items-center justify-between w-full py-2.5 text-sm font-medium text-gray-600">
+                                Services
+                                <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <ul x-show="open" class="pl-4 pb-2 space-y-1" x-cloak>
+                                                                    <li>
+                                        <a href="/services"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            All Services
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/four-point-inspection"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            4-Point Inspection
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/wind-mitigation"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Wind Mitigation
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </li>
+                                                                                <li>
+                            <a href="/about"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                About
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/workflow"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Workflow
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/pricing"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Pricing
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/contact"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Contact
+                            </a>
+                        </li>
+                                                    <li class="pt-2">
+                    <a href="/contact"
+                       @click="mobileOpen = false"
+                       class="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white"
+                       style="background-color: var(--color-primary)">
+                        Get an Inspection
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <header
+        x-show="scrolled"
+        x-transition:enter="transition ease-out duration-300 delay-200"
+        x-transition:enter-start="opacity-0 -translate-y-full"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 -translate-y-full"
+        class="bg-white/95 backdrop-blur-sm shadow-md"
+        x-cloak
+    >
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <nav class="h-14 flex items-center justify-between">
+
+                <a href="/" class="flex items-center">
+                    <img src="/assets/images/favicon.svg" alt="Calidad Inspections" class="h-9 w-auto">
+                </a>
+
+                <ul class="hidden md:flex items-center gap-8">
+                                                                        <li x-data="{ open: false }" class="relative">
+                                <button
+                                    @click="open = !open"
+                                    @click.outside="open = false"
+                                    class="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200"
+                                >
+                                    Services
+                                    <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div
+                                    x-show="open"
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 -translate-y-1"
+                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                    x-transition:leave="transition ease-in duration-100"
+                                    x-transition:leave-start="opacity-100 translate-y-0"
+                                    x-transition:leave-end="opacity-0 -translate-y-1"
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50"
+                                    x-cloak
+                                >
+                                                                            <a href="/services"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            All Services
+                                        </a>
+                                                                            <a href="/four-point-inspection"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            4-Point Inspection
+                                        </a>
+                                                                            <a href="/wind-mitigation"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Wind Mitigation
+                                        </a>
+                                                                    </div>
+                            </li>
+                                                                                                <li>
+                                <a href="/about"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    About
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/workflow"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Workflow
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/pricing"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Pricing
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/contact"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Contact
+                                </a>
+                            </li>
+                                                            </ul>
+
+                <a href="/contact"
+                   class="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors duration-200"
+                   style="background-color: var(--color-primary)">
+                    Get an Inspection
+                </a>
+
+                <button
+                    @click="mobileOpen = !mobileOpen"
+                    :aria-expanded="mobileOpen"
+                    class="md:hidden p-2 rounded-md text-gray-600"
+                    aria-label="Toggle menu"
+                >
+                    <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <svg x-show="mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+
+            </nav>
+        </div>
+
+        
+        <div
+            x-show="mobileOpen"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-3"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-3"
+            class="md:hidden border-t border-gray-100 bg-white"
+            x-cloak
+        >
+            <ul class="flex flex-col px-6 py-4 gap-1">
+                                                            <li x-data="{ open: false }">
+                            <button @click="open = !open"
+                                    class="flex items-center justify-between w-full py-2.5 text-sm font-medium text-gray-600">
+                                Services
+                                <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <ul x-show="open" class="pl-4 pb-2 space-y-1" x-cloak>
+                                                                    <li>
+                                        <a href="/services"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            All Services
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/four-point-inspection"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            4-Point Inspection
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/wind-mitigation"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Wind Mitigation
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </li>
+                                                                                <li>
+                            <a href="/about"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                About
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/workflow"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Workflow
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/pricing"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Pricing
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/contact"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Contact
+                            </a>
+                        </li>
+                                                    <li class="pt-2">
+                    <a href="/contact"
+                       @click="mobileOpen = false"
+                       class="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white"
+                       style="background-color: var(--color-primary)">
+                        Get an Inspection
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+</div>
+        <div class="pt-32 pb-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        
+        <div class="text-center max-w-2xl mx-auto mb-20">
+            <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-secondary)">
+                Our Credentials
+            </span>
+            <h1 class="mt-3 text-4xl sm:text-5xl font-black text-gray-900">
+                Certifications & Licenses
+            </h1>
+            <p class="mt-5 text-lg text-gray-500 leading-relaxed">
+                Every certification listed here represents hours of training, rigorous testing, and a commitment
+                to delivering the highest standard of inspection service in South Florida.
+            </p>
+        </div>
+
+        
+        <div class="mb-20">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-100">
+                InterNACHI Certifications
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/internachi-certified-blue-gold-logo-1545240140.png"
+                            alt="InterNACHI Certified"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">InterNACHI Certified</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/internachi-certified-professional-inspector-cpi-logo-1545171029.png"
+                            alt="Certified Professional Inspector (CPI)"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Certified Professional Inspector (CPI)</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/five-year-internachi-member-logo-1545157551.png"
+                            alt="5-Year InterNACHI Member"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">5-Year InterNACHI Member</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/honor-guarantee-logo-1588861314.png"
+                            alt="Honor Guarantee"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Honor Guarantee</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/buy-back-guarantee-logo-1545244415.png"
+                            alt="Buy-Back Guarantee"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Buy-Back Guarantee</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/four-point-inspector-logo-1545340166.png"
+                            alt="4-Point Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">4-Point Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/wind-mitigation-inspector-logo-1548196344.png"
+                            alt="Wind Mitigation Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Wind Mitigation Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/hvac-inspector-logo-1550681128.png"
+                            alt="HVAC Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">HVAC Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/plumbing-inspector-logo-1546025131.png"
+                            alt="Plumbing Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Plumbing Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/electrical-inspector-logo-1547837202.png"
+                            alt="Electrical Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Electrical Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/roof-inspector-logo-1548195546.png"
+                            alt="Roof Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Roof Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/structure-foundation-inspector-logo-1547051923.png"
+                            alt="Structure &amp; Foundation Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Structure &amp; Foundation Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/moisture-intrusion-inspector-logo-1546016950.png"
+                            alt="Moisture Intrusion Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Moisture Intrusion Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/mold-inspector-logo-1546019081.png"
+                            alt="Mold Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Mold Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/indoor-air-quality-inspector-logo-1585834007.png"
+                            alt="Indoor Air Quality Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Indoor Air Quality Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/infrared-certified-internachi-thermography-inspector-logo-1672946651.png"
+                            alt="Infrared Certified Thermography Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Infrared Certified Thermography Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/new-construction-inspector-logo-1599240338.png"
+                            alt="New Construction Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">New Construction Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/pre-drywall-inspector-logo-1662490097.png"
+                            alt="Pre-Drywall Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Pre-Drywall Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/post-hurricane-building-safety-inspector-logo-1729785962.png"
+                            alt="Post-Hurricane Building Safety Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Post-Hurricane Building Safety Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/first-time-home-buyer-friendly-logo-1545245068.png"
+                            alt="First-Time Home Buyer Friendly"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">First-Time Home Buyer Friendly</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/residential-property-inspector-logo-1546033350.png"
+                            alt="Residential Property Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Residential Property Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/multi-unit-housing-inspector-logo-1546024433.png"
+                            alt="Multi-Unit Housing Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Multi-Unit Housing Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/condo-inspector-logo-1673037691.png"
+                            alt="Condo Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Condo Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/mobile-home-inspector-1550697656.png"
+                            alt="Mobile Home Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Mobile Home Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/exterior-inspector-logo-1548192725.png"
+                            alt="Exterior Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Exterior Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/attic-insulation-ventilation-interior-logo-1636468073.png"
+                            alt="Attic, Insulation &amp; Ventilation Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Attic, Insulation &amp; Ventilation Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/crawlspace-inspector-logo-1547837514.png"
+                            alt="Crawlspace Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Crawlspace Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/chimney-inspector-logo-1545253524.png"
+                            alt="Chimney Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Chimney Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/garage-inspector-logo-1545342585.png"
+                            alt="Garage Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Garage Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/deck-inspector-logo-1550611142.png"
+                            alt="Deck Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Deck Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/kitchen-inspector-logo-1550695904.png"
+                            alt="Kitchen Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Kitchen Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/stucco-inspector-logo-1548195931.png"
+                            alt="Stucco Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Stucco Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/pool-spa-inspector-logo-1550682907.png"
+                            alt="Pool &amp; Spa Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Pool &amp; Spa Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/internachi-sewer-scope-certified-inspector-logo-1546035839.png"
+                            alt="Sewer Scope Certified Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Sewer Scope Certified Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/internachi-certified-property-maintenance-housing-code-inspector-logo-1609794010.png"
+                            alt="Property Maintenance &amp; Housing Code Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Property Maintenance &amp; Housing Code Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/home-energy-inspector-logo-1550787150.png"
+                            alt="Home Energy Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Home Energy Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/home-energy-auditor-logo-1548194892.png"
+                            alt="Home Energy Auditor"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Home Energy Auditor</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/green-building-inspector-logo-1545343132.png"
+                            alt="Green Building Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Green Building Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/healthy-homes-inspector-logo-1545427697.png"
+                            alt="Healthy Homes Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Healthy Homes Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/water-quality-tester-logo-1551907430.png"
+                            alt="Water Quality Tester"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Water Quality Tester</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/lawn-irrigation-system-inspector-logo-1584559889.png"
+                            alt="Lawn &amp; Irrigation System Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Lawn &amp; Irrigation System Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/tree-inspector-logo-1547054194.png"
+                            alt="Tree Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Tree Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/drone-pilot-logo-1545341205.png"
+                            alt="Drone Pilot"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Drone Pilot</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/repair-verification-logo-1548192428.png"
+                            alt="Repair Verification"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Repair Verification</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/annual-home-maintenance-inspections-logo-1550603005.png"
+                            alt="Annual Home Maintenance Inspections"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Annual Home Maintenance Inspections</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/11th-month-warranty-inspector-logo-1550602859.png"
+                            alt="11th Month Warranty Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">11th Month Warranty Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/contractor-experience-logo-1550700583.png"
+                            alt="Contractor Experience"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Contractor Experience</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/fire-extinguisher-inspector-logo-1762381009.png"
+                            alt="Fire Extinguisher Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Fire Extinguisher Inspector</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/bilingual-logo-1545246581.png"
+                            alt="Bilingual"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Bilingual</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/habla-espanol-logo-1545245896.png"
+                            alt="Habla Español"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Habla Español</p>
+                    </div>
+                                    <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
+                        <img
+                            src="/assets/images/certifications/certifications-page/spanish-internachi-certified-professional-inspector-cpi-logo-1587592481.png"
+                            alt="Spanish Certified Professional Inspector"
+                            class="h-20 w-auto object-contain mb-3"
+                        >
+                        <p class="text-xs font-semibold text-gray-600 leading-tight">Spanish Certified Professional Inspector</p>
+                    </div>
+                            </div>
+        </div>
+
+        
+        <div class="rounded-2xl p-10 text-center"
+             style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%)">
+            <h3 class="text-2xl font-bold text-white mb-3">Have questions about our qualifications?</h3>
+            <p class="text-white/75 mb-8 max-w-xl mx-auto">
+                We're happy to walk you through our credentials and explain what each certification means for your inspection.
+            </p>
+            <a href="/contact"
+               class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white font-bold text-sm transition-opacity duration-200 hover:opacity-90"
+               style="color: var(--color-primary)">
+                Get in Touch
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</div>
+        <footer class="py-12" style="background-color: #002d3d">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <div>
+                <img src="/assets/images/quality.svg" alt="Calidad Inspections"
+                     class="h-12 w-auto brightness-0 invert opacity-90">
+                <p class="text-white/50 text-sm mt-2">Professional. Thorough. Trusted.</p>
+            </div>
+
+            <nav class="flex flex-wrap justify-center gap-6">
+                                    <a href="/services"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        Services
+                    </a>
+                                    <a href="/about"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        About
+                    </a>
+                                    <a href="/workflow"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        Workflow
+                    </a>
+                                    <a href="/pricing"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        Pricing
+                    </a>
+                                    <a href="/contact"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        Contact
+                    </a>
+                            </nav>
+
+        </div>
+
+        <div class="mt-8 pt-8 border-t border-white/10 text-center">
+            <p class="text-white/40 text-sm">
+                &copy; 2026 Calidad Inspections. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>

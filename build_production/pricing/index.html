@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="/pricing">
+        <meta name="description" content="Professional home inspection services you can trust.">
+        <title>Calidad Inspections</title>
+        <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+                <link rel="stylesheet" href="/assets/build/assets/main-IAhpQiXf.css">
+        <script defer type="module" src="/assets/build/assets/main-ByNcbeG_.js"></script>
+    </head>
+    <body class="text-gray-900 font-sans antialiased">
+        <div
+    x-data="{ scrolled: false, mobileOpen: false }"
+    @scroll.window="scrolled = window.scrollY > 60"
+    class="fixed top-0 left-0 right-0 z-50"
+>
+
+    
+    <header
+        x-show="!scrolled"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 -translate-y-full"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 -translate-y-full"
+        class="bg-white/95 backdrop-blur-sm shadow-sm"
+    >
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <nav class="h-24 flex items-center justify-between">
+
+                <a href="/" class="flex items-center">
+                    <img src="/assets/images/quality.svg" alt="Calidad Inspections" class="h-20 w-auto">
+                </a>
+
+                <ul class="hidden md:flex items-center gap-8">
+                                                                        <li x-data="{ open: false }" class="relative">
+                                <button
+                                    @click="open = !open"
+                                    @click.outside="open = false"
+                                    class="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200"
+                                >
+                                    Services
+                                    <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div
+                                    x-show="open"
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 -translate-y-1"
+                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                    x-transition:leave="transition ease-in duration-100"
+                                    x-transition:leave-start="opacity-100 translate-y-0"
+                                    x-transition:leave-end="opacity-0 -translate-y-1"
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50"
+                                    x-cloak
+                                >
+                                                                            <a href="/services"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            All Services
+                                        </a>
+                                                                            <a href="/four-point-inspection"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            4-Point Inspection
+                                        </a>
+                                                                            <a href="/wind-mitigation"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Wind Mitigation
+                                        </a>
+                                                                    </div>
+                            </li>
+                                                                                                <li>
+                                <a href="/about"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    About
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/workflow"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Workflow
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/pricing"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Pricing
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/contact"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Contact
+                                </a>
+                            </li>
+                                                            </ul>
+
+                <a href="/contact"
+                   class="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors duration-200"
+                   style="background-color: var(--color-primary)">
+                    Get an Inspection
+                </a>
+
+                <button
+                    @click="mobileOpen = !mobileOpen"
+                    :aria-expanded="mobileOpen"
+                    class="md:hidden p-2 rounded-md text-gray-600"
+                    aria-label="Toggle menu"
+                >
+                    <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <svg x-show="mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+
+            </nav>
+        </div>
+
+        
+        <div
+            x-show="mobileOpen"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-3"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-3"
+            class="md:hidden border-t border-gray-100 bg-white"
+            x-cloak
+        >
+            <ul class="flex flex-col px-6 py-4 gap-1">
+                                                            <li x-data="{ open: false }">
+                            <button @click="open = !open"
+                                    class="flex items-center justify-between w-full py-2.5 text-sm font-medium text-gray-600">
+                                Services
+                                <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <ul x-show="open" class="pl-4 pb-2 space-y-1" x-cloak>
+                                                                    <li>
+                                        <a href="/services"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            All Services
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/four-point-inspection"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            4-Point Inspection
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/wind-mitigation"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Wind Mitigation
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </li>
+                                                                                <li>
+                            <a href="/about"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                About
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/workflow"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Workflow
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/pricing"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Pricing
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/contact"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Contact
+                            </a>
+                        </li>
+                                                    <li class="pt-2">
+                    <a href="/contact"
+                       @click="mobileOpen = false"
+                       class="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white"
+                       style="background-color: var(--color-primary)">
+                        Get an Inspection
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <header
+        x-show="scrolled"
+        x-transition:enter="transition ease-out duration-300 delay-200"
+        x-transition:enter-start="opacity-0 -translate-y-full"
+        x-transition:enter-end="opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 -translate-y-full"
+        class="bg-white/95 backdrop-blur-sm shadow-md"
+        x-cloak
+    >
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <nav class="h-14 flex items-center justify-between">
+
+                <a href="/" class="flex items-center">
+                    <img src="/assets/images/favicon.svg" alt="Calidad Inspections" class="h-9 w-auto">
+                </a>
+
+                <ul class="hidden md:flex items-center gap-8">
+                                                                        <li x-data="{ open: false }" class="relative">
+                                <button
+                                    @click="open = !open"
+                                    @click.outside="open = false"
+                                    class="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200"
+                                >
+                                    Services
+                                    <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div
+                                    x-show="open"
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 -translate-y-1"
+                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                    x-transition:leave="transition ease-in duration-100"
+                                    x-transition:leave-start="opacity-100 translate-y-0"
+                                    x-transition:leave-end="opacity-0 -translate-y-1"
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50"
+                                    x-cloak
+                                >
+                                                                            <a href="/services"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            All Services
+                                        </a>
+                                                                            <a href="/four-point-inspection"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            4-Point Inspection
+                                        </a>
+                                                                            <a href="/wind-mitigation"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Wind Mitigation
+                                        </a>
+                                                                    </div>
+                            </li>
+                                                                                                <li>
+                                <a href="/about"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    About
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/workflow"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Workflow
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/pricing"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Pricing
+                                </a>
+                            </li>
+                                                                                                <li>
+                                <a href="/contact"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Contact
+                                </a>
+                            </li>
+                                                            </ul>
+
+                <a href="/contact"
+                   class="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-colors duration-200"
+                   style="background-color: var(--color-primary)">
+                    Get an Inspection
+                </a>
+
+                <button
+                    @click="mobileOpen = !mobileOpen"
+                    :aria-expanded="mobileOpen"
+                    class="md:hidden p-2 rounded-md text-gray-600"
+                    aria-label="Toggle menu"
+                >
+                    <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <svg x-show="mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+
+            </nav>
+        </div>
+
+        
+        <div
+            x-show="mobileOpen"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-3"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-3"
+            class="md:hidden border-t border-gray-100 bg-white"
+            x-cloak
+        >
+            <ul class="flex flex-col px-6 py-4 gap-1">
+                                                            <li x-data="{ open: false }">
+                            <button @click="open = !open"
+                                    class="flex items-center justify-between w-full py-2.5 text-sm font-medium text-gray-600">
+                                Services
+                                <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <ul x-show="open" class="pl-4 pb-2 space-y-1" x-cloak>
+                                                                    <li>
+                                        <a href="/services"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            All Services
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/four-point-inspection"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            4-Point Inspection
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/wind-mitigation"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Wind Mitigation
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </li>
+                                                                                <li>
+                            <a href="/about"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                About
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/workflow"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Workflow
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/pricing"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Pricing
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="/contact"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Contact
+                            </a>
+                        </li>
+                                                    <li class="pt-2">
+                    <a href="/contact"
+                       @click="mobileOpen = false"
+                       class="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white"
+                       style="background-color: var(--color-primary)">
+                        Get an Inspection
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+</div>
+        
+
+<section class="pt-36 pb-16" style="background-color: var(--color-neutral)">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <h1 class="text-4xl sm:text-5xl font-black tracking-tight mb-5" style="color: var(--color-primary)">
+            TRANSPARENT PRICING
+        </h1>
+        <p class="text-lg text-gray-500 leading-relaxed max-w-xl mx-auto mb-6">
+            Precision inspections for South Florida homeowners. Choose the coverage you need,
+            from focused insurance reports to comprehensive property evaluations.
+        </p>
+        <span class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest"
+              style="color: var(--color-secondary)">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            Serving Miami-Dade, Broward, and Palm Beach Counties
+        </span>
+    </div>
+</section>
+
+
+<section class="pb-24" style="background-color: var(--color-neutral)">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+
+            
+            <div class="bg-white rounded-2xl border border-gray-200 p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="mb-6">
+                    <h2 class="text-xl font-black text-gray-900">4-Point</h2>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mt-1">Insurance Essential</p>
+                </div>
+                <div class="mb-6">
+                    <span class="text-5xl font-black" style="color: var(--color-primary)">$175</span>
+                </div>
+                <ul class="space-y-3 flex-1 mb-8">
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            HVAC System
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Electrical Panels &amp; Wiring
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Plumbing Connections
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Roof Condition
+                        </li>
+                                    </ul>
+                <a href="/contact"
+                   class="block text-center py-3 rounded-xl text-sm font-bold border-2 transition-colors duration-200 hover:bg-gray-50"
+                   style="border-color: var(--color-primary); color: var(--color-primary)">
+                    SELECT PLAN
+                </a>
+            </div>
+
+            
+            <div class="bg-white rounded-2xl border border-gray-200 p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="mb-6">
+                    <h2 class="text-xl font-black text-gray-900">Wind Mit</h2>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mt-1">Credit Verification</p>
+                </div>
+                <div class="mb-6">
+                    <span class="text-5xl font-black" style="color: var(--color-primary)">$150</span>
+                </div>
+                <ul class="space-y-3 flex-1 mb-8">
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Roof-to-Wall Attachment
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Secondary Water Barrier
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Opening Protection
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Reduces Insurance Premiums
+                        </li>
+                                    </ul>
+                <a href="/contact"
+                   class="block text-center py-3 rounded-xl text-sm font-bold border-2 transition-colors duration-200 hover:bg-gray-50"
+                   style="border-color: var(--color-primary); color: var(--color-primary)">
+                    SELECT PLAN
+                </a>
+            </div>
+
+            
+            <div class="relative rounded-2xl p-8 flex flex-col shadow-lg"
+                 style="background-color: var(--color-primary); border: 2px solid var(--color-primary)">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                    <span class="px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest text-white whitespace-nowrap"
+                          style="background-color: var(--color-secondary)">
+                        Best Value Bundle
+                    </span>
+                </div>
+                <div class="mb-6 mt-2">
+                    <h2 class="text-xl font-black text-white">The Bundle</h2>
+                    <p class="text-xs font-bold uppercase tracking-widest text-white/60 mt-1">4-Point + Wind Mit</p>
+                </div>
+                <div class="flex items-baseline gap-3 mb-6">
+                    <span class="text-5xl font-black text-white">$275</span>
+                    <span class="text-lg font-bold text-white/40 line-through">$325</span>
+                </div>
+                <ul class="space-y-3 flex-1 mb-6">
+                                            <li class="flex items-center gap-2.5 text-sm text-white font-medium">
+                            <svg class="w-4 h-4 flex-shrink-0 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Complete 4-Point Report
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-white font-medium">
+                            <svg class="w-4 h-4 flex-shrink-0 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Full Wind Mitigation Study
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-white font-medium">
+                            <svg class="w-4 h-4 flex-shrink-0 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Digital Report Delivery
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-white font-medium">
+                            <svg class="w-4 h-4 flex-shrink-0 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Insurance Submission Ready
+                        </li>
+                                    </ul>
+                <div class="text-center py-2 rounded-lg text-xs font-black uppercase tracking-widest text-white/70 bg-white/10 mb-4">
+                    Save $50 Instantly
+                </div>
+                <a href="/contact"
+                   class="block text-center py-3 rounded-xl text-sm font-black bg-white transition-opacity duration-200 hover:opacity-90"
+                   style="color: var(--color-primary)">
+                    BOOK BUNDLE
+                </a>
+            </div>
+
+            
+            <div class="bg-white rounded-2xl border border-gray-200 p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="mb-6">
+                    <h2 class="text-xl font-black text-gray-900">Full Home</h2>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mt-1">Comprehensive Analysis</p>
+                </div>
+                <div class="mb-6">
+                    <span class="text-2xl font-bold text-gray-400">From </span>
+                    <span class="text-5xl font-black" style="color: var(--color-primary)">$450</span>
+                </div>
+                <ul class="space-y-3 flex-1 mb-8">
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Structural Components
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Exterior &amp; Interior Walls
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Appliance Testing
+                        </li>
+                                            <li class="flex items-center gap-2.5 text-sm text-gray-600">
+                            <svg class="w-4 h-4 flex-shrink-0" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Foundation &amp; Attic
+                        </li>
+                                    </ul>
+                <a href="/contact"
+                   class="block text-center py-3 rounded-xl text-sm font-bold border-2 transition-colors duration-200 hover:bg-gray-50"
+                   style="border-color: var(--color-primary); color: var(--color-primary)">
+                    GET QUOTE
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="pb-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            
+            <div class="relative rounded-2xl overflow-hidden min-h-[360px]">
+                <img src="/assets/images/precision-authority.jpg" alt="South Florida home inspection"
+                     class="w-full h-full object-cover object-center absolute inset-0">
+                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.10) 60%, transparent 100%)"></div>
+                <div class="absolute bottom-8 left-8 right-8">
+                    <p class="text-2xl font-black text-white uppercase tracking-wide leading-tight">Precision Authority</p>
+                    <p class="text-white/70 text-sm mt-1">Every detail documented with clinical accuracy.</p>
+                </div>
+            </div>
+
+            
+            <div class="flex flex-col gap-6">
+
+                
+                <div class="rounded-2xl p-8 flex items-start gap-5 text-white"
+                     style="background-color: var(--color-secondary)">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-black text-white mb-2">24-Hour Turnaround</h3>
+                        <p class="text-white/80 text-sm leading-relaxed">
+                            Most digital reports delivered within one business day of the site visit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
+
+                    
+                    <div class="rounded-2xl border border-gray-100 p-7 bg-white shadow-sm flex flex-col gap-4">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center"
+                             style="background-color: color-mix(in srgb, var(--color-primary) 10%, transparent)">
+                            <svg class="w-6 h-6" style="color: var(--color-primary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-black text-gray-900 uppercase tracking-wide mb-2" style="color: var(--color-primary)">Smart Reports</h3>
+                            <p class="text-sm text-gray-500 leading-relaxed">
+                                Interactive PDF reports with high-resolution photos and clear action items.
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="rounded-2xl border border-gray-100 p-7 shadow-sm flex flex-col gap-4"
+                         style="background-color: var(--color-neutral)">
+                        <div class="w-12 h-12 rounded-xl bg-white border border-gray-100 shadow-sm flex items-center justify-center">
+                            <svg class="w-6 h-6" style="color: var(--color-secondary)" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-black uppercase tracking-wide mb-2" style="color: var(--color-primary)">Easy Online Booking</h3>
+                            <p class="text-sm text-gray-500 leading-relaxed mb-4">
+                                Schedule your inspection in under 60 seconds. Select your service, pick a time, and we'll handle the rest.
+                            </p>
+                            <a href="/contact"
+                               class="inline-flex items-center px-5 py-2.5 rounded-lg text-xs font-black uppercase tracking-widest text-white transition-opacity hover:opacity-90"
+                               style="background-color: var(--color-secondary)">
+                                Schedule Now
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="py-24 text-center" style="background-color: var(--color-primary)">
+    <div class="max-w-2xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-wide mb-5">
+            Need a Custom Inspection Package?
+        </h2>
+        <p class="text-white/70 text-lg leading-relaxed mb-10">
+            We offer specialty services including mold testing, radon gas screening,
+            and commercial property evaluations.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:5551234567"
+               class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl text-sm font-bold text-white border-2 border-white/40 hover:border-white transition-colors duration-200">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                Call (555) 123-4567
+            </a>
+            <a href="mailto:info@calidadinspections.com"
+               class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl text-sm font-bold text-white transition-opacity hover:opacity-90"
+               style="background-color: var(--color-tertiary)">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                Email Estimates
+            </a>
+        </div>
+    </div>
+</section>
+
+        <footer class="py-12" style="background-color: #002d3d">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <div>
+                <img src="/assets/images/quality.svg" alt="Calidad Inspections"
+                     class="h-12 w-auto brightness-0 invert opacity-90">
+                <p class="text-white/50 text-sm mt-2">Professional. Thorough. Trusted.</p>
+            </div>
+
+            <nav class="flex flex-wrap justify-center gap-6">
+                                    <a href="/services"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        Services
+                    </a>
+                                    <a href="/about"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        About
+                    </a>
+                                    <a href="/workflow"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        Workflow
+                    </a>
+                                    <a href="/pricing"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        Pricing
+                    </a>
+                                    <a href="/contact"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        Contact
+                    </a>
+                            </nav>
+
+        </div>
+
+        <div class="mt-8 pt-8 border-t border-white/10 text-center">
+            <p class="text-white/40 text-sm">
+                &copy; 2026 Calidad Inspections. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>
