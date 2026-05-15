@@ -5,7 +5,7 @@
 {{-- ── Header ───────────────────────────────────────────── --}}
 <section class="pt-36 pb-16 bg-white border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-secondary)">
+        <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-primary)">
             What We Offer
         </span>
         <h1 class="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
@@ -167,7 +167,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             <div>
-                <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-secondary)">
+                <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-primary)">
                     Why Calidad
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-6">

@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-secondary)">
+            <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-primary)">
                 Client Reviews
             </span>
             <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-gray-900">
@@ -39,7 +39,7 @@
                                 </div>
                                 <div>
                                     <div class="font-semibold text-gray-900">{{ $testimonial['name'] }}</div>
-                                    <div class="text-sm text-gray-400">{{ $testimonial['role'] }}</div>
+                                    <div class="text-sm text-gray-500">{{ $testimonial['role'] }}</div>
                                 </div>
                             </div>
 

@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-secondary)">
+            <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-primary)">
                 Credentials & Licensing
             </span>
             <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-gray-900">

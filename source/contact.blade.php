@@ -5,7 +5,7 @@
 {{-- ── Header ───────────────────────────────────────────── --}}
 <section class="pt-36 pb-16 bg-white border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-secondary)">
+        <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-primary)">
             Get in Touch
         </span>
         <h1 class="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
@@ -38,7 +38,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="text-xs text-gray-400 font-semibold uppercase tracking-wide mb-0.5">Phone</p>
+                                <p class="text-xs text-gray-600 font-semibold uppercase tracking-wide mb-0.5">Phone</p>
                                 <a href="tel:{{ $page->phone_raw }}" class="text-sm font-semibold text-gray-900 hover:underline">{{ $page->phone }}</a>
                             </div>
                         </li>
@@ -51,7 +51,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="text-xs text-gray-400 font-semibold uppercase tracking-wide mb-0.5">Email</p>
+                                <p class="text-xs text-gray-600 font-semibold uppercase tracking-wide mb-0.5">Email</p>
                                 <a href="mailto:{{ $page->email }}" class="text-sm font-semibold text-gray-900 hover:underline">{{ $page->email }}</a>
                             </div>
                         </li>
@@ -64,7 +64,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="text-xs text-gray-400 font-semibold uppercase tracking-wide mb-0.5">Hours</p>
+                                <p class="text-xs text-gray-600 font-semibold uppercase tracking-wide mb-0.5">Hours</p>
                                 <p class="text-sm font-semibold text-gray-900">Mon – Sun: 7 AM – 7 PM</p>
                             </div>
                         </li>
@@ -78,7 +78,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="text-xs text-gray-400 font-semibold uppercase tracking-wide mb-0.5">Service Area</p>
+                                <p class="text-xs text-gray-600 font-semibold uppercase tracking-wide mb-0.5">Service Area</p>
                                 <p class="text-sm font-semibold text-gray-900">Miami-Dade, Broward &amp; Palm Beach</p>
                             </div>
                         </li>

@@ -8,7 +8,7 @@
 :root {
     --color-primary: #006B8C;
     --color-secondary: #009DA6;
-    --color-tertiary: #F4952C;
+    --color-tertiary: #B05C0F;
     --color-neutral: #F8F9FA;
 }
 
@@ -26,11 +26,28 @@ html {
 }
 
 .testimonials-swiper .swiper-pagination-bullet {
+    width: 24px;
+    height: 24px;
+    margin: 0 4px !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    position: relative;
+}
+
+.testimonials-swiper .swiper-pagination-bullet::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
     background-color: var(--color-secondary);
     opacity: 0.4;
 }
 
-.testimonials-swiper .swiper-pagination-bullet-active {
+.testimonials-swiper .swiper-pagination-bullet-active::after {
     background-color: var(--color-primary);
     opacity: 1;
 }

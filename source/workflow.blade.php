@@ -33,7 +33,7 @@
 
             {{-- Sticky sidebar --}}
             <aside class="hidden lg:block w-56 flex-shrink-0 sticky top-24 self-start">
-                <p class="text-xs font-black uppercase tracking-widest text-gray-400 mb-5">Process Overview</p>
+                <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-5">Process Overview</p>
                 <ul class="space-y-1">
                     @foreach ([
                         [1, 'Booking Online'],
@@ -48,7 +48,7 @@
                                    ? 'border-[var(--color-tertiary)]'
                                    : 'border-gray-200 hover:border-gray-400'">
                                 <span class="block text-[10px] font-bold uppercase tracking-widest mb-0.5 transition-colors"
-                                      :class="active === {{ $num }} ? 'text-[var(--color-tertiary)]' : 'text-gray-400'">
+                                      :class="active === {{ $num }} ? 'text-[var(--color-tertiary)]' : 'text-gray-500'">
                                     Step 0{{ $num }}
                                 </span>
                                 <span class="block text-sm font-semibold transition-colors"
@@ -76,7 +76,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                             </svg>
-                            <span class="text-xs font-black uppercase tracking-widest" style="color: var(--color-secondary)">Phase One</span>
+                            <span class="text-xs font-black uppercase tracking-widest" style="color: var(--color-primary)">Phase One</span>
                         </div>
                         <h2 class="text-2xl font-black text-gray-900 mb-3">1. Booking Online</h2>
                         <p class="text-gray-500 leading-relaxed mb-6">
@@ -86,9 +86,9 @@
                         </p>
                         <div class="flex flex-wrap gap-3">
                             <span class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-white"
-                                  style="background-color: var(--color-secondary)">Real-time Availability</span>
+                                  style="background-color: var(--color-primary)">Real-time Availability</span>
                             <span class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-white"
-                                  style="background-color: var(--color-secondary)">Instant Quote</span>
+                                  style="background-color: var(--color-primary)">Instant Quote</span>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                             </svg>
-                            <span class="text-xs font-black uppercase tracking-widest" style="color: var(--color-secondary)">Phase Two</span>
+                            <span class="text-xs font-black uppercase tracking-widest" style="color: var(--color-primary)">Phase Two</span>
                         </div>
                         <h2 class="text-2xl font-black text-gray-900 mb-3">2. On Site Inspection</h2>
                         <p class="text-gray-500 leading-relaxed mb-6">
@@ -139,7 +139,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                             </svg>
-                            <span class="text-xs font-black uppercase tracking-widest" style="color: var(--color-secondary)">Phase Three</span>
+                            <span class="text-xs font-black uppercase tracking-widest" style="color: var(--color-primary)">Phase Three</span>
                         </div>
                         <h2 class="text-2xl font-black text-gray-900 mb-3">3. Digital Report Generation</h2>
                         <p class="text-gray-500 leading-relaxed mb-6">
@@ -158,10 +158,10 @@
                                 </div>
                                 <div>
                                     <p class="text-sm font-semibold text-gray-900">Sample_Inspection_Report.pdf</p>
-                                    <p class="text-xs text-gray-400">4.2 MB · Ready for review</p>
+                                    <p class="text-xs text-gray-500">4.2 MB · Ready for review</p>
                                 </div>
                             </div>
-                            <a href="/contact" class="text-sm font-bold" style="color: var(--color-secondary)">
+                            <a href="/contact" class="text-sm font-bold" style="color: var(--color-primary)">
                                 View Live Demo
                             </a>
                         </div>

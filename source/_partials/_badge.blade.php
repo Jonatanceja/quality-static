@@ -26,14 +26,14 @@
 
             {{-- Copy --}}
             <div class="text-center lg:text-left">
-                <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest bg-white/15 text-white mb-5">
+                <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border border-white/40 text-white mb-5">
                     Industry Recognition
                 </span>
                 <h2 class="text-4xl sm:text-5xl font-black text-white leading-tight mb-5">
                     Top 2% of Home Inspectors<br class="hidden sm:block">
                     <span class="text-white/80">in the Nation</span>
                 </h2>
-                <p class="text-lg text-white/75 leading-relaxed max-w-xl">
+                <p class="text-lg text-white/90 leading-relaxed max-w-xl">
                     Out of tens of thousands of certified inspectors across the United States, Calidad Inspections
                     ranks among the top 2%, recognized for accuracy, thoroughness, and outstanding client outcomes.
                 </p>

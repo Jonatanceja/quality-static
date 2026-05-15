@@ -20,7 +20,7 @@
         </div>
 
         <div class="mt-8 pt-8 border-t border-white/10 text-center">
-            <p class="text-white/40 text-sm">
+            <p class="text-white/70 text-sm">
                 &copy; {{ date('Y') }} Calidad Inspections. All rights reserved.
             </p>
         </div>

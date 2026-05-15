@@ -13,7 +13,7 @@
             from focused insurance reports to comprehensive property evaluations.
         </p>
         <span class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest"
-              style="color: var(--color-secondary)">
+              style="color: var(--color-primary)">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
@@ -33,7 +33,7 @@
             <div class="bg-white rounded-2xl border border-gray-200 p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="mb-6">
                     <h2 class="text-xl font-black text-gray-900">4-Point</h2>
-                    <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mt-1">Insurance Essential</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mt-1">Insurance Essential</p>
                 </div>
                 <div class="mb-6">
                     <span class="text-5xl font-black" style="color: var(--color-primary)">$150</span>
@@ -59,7 +59,7 @@
             <div class="bg-white rounded-2xl border border-gray-200 p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="mb-6">
                     <h2 class="text-xl font-black text-gray-900">Wind Mit</h2>
-                    <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mt-1">Credit Verification</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mt-1">Credit Verification</p>
                 </div>
                 <div class="mb-6">
                     <span class="text-5xl font-black" style="color: var(--color-primary)">$150</span>
@@ -122,7 +122,7 @@
             <div class="bg-white rounded-2xl border border-gray-200 p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div class="mb-6">
                     <h2 class="text-xl font-black text-gray-900">Full Home</h2>
-                    <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mt-1">Comprehensive Analysis</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mt-1">Comprehensive Analysis</p>
                 </div>
                 <div class="mb-6">
                     <span class="text-2xl font-bold text-gray-400">From </span>

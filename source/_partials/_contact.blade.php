@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
         <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-secondary)">
+            <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-primary)">
                 Get in Touch
             </span>
             <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-gray-900">
@@ -24,7 +24,7 @@
                     </svg>
                 </div>
                 <div>
-                    <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Phone</p>
+                    <p class="text-xs text-gray-600 font-medium uppercase tracking-wide">Phone</p>
                     <p class="text-gray-900 font-semibold">{{ $page->phone }}</p>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     </svg>
                 </div>
                 <div>
-                    <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Email</p>
+                    <p class="text-xs text-gray-600 font-medium uppercase tracking-wide">Email</p>
                     <p class="text-gray-900 font-semibold">{{ $page->email }}</p>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                     </svg>
                 </div>
                 <div>
-                    <p class="text-xs text-gray-400 font-medium uppercase tracking-wide">Hours</p>
+                    <p class="text-xs text-gray-600 font-medium uppercase tracking-wide">Hours</p>
                     <p class="text-gray-900 font-semibold">Mon – Sun: 7 AM – 7 PM</p>
                 </div>
             </div>

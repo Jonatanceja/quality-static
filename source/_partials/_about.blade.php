@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             <div>
-                <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-secondary)">
+                <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-primary)">
                     Who We Are
                 </span>
                 <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-gray-900">
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="absolute -bottom-6 -left-6 w-32 h-32 rounded-2xl flex flex-col items-center justify-center text-center shadow-xl bg-white border border-gray-100">
-                    <span class="text-3xl font-bold" style="color: var(--color-tertiary)">98%</span>
+                    <span class="text-3xl font-bold" style="color: var(--color-primary)">98%</span>
                     <span class="text-xs text-gray-500 mt-1 font-medium">Client<br>Satisfaction</span>
                 </div>
             </div>

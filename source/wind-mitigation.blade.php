@@ -52,7 +52,7 @@
 
             {{-- Left: text + bullets --}}
             <div>
-                <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-secondary)">
+                <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-primary)">
                     Unlock Savings
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-6">
@@ -119,7 +119,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
         <div class="text-center mb-16">
-            <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-secondary)">
+            <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-primary)">
                 What We Inspect
             </span>
             <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Precision Evaluation Areas</h2>
@@ -248,7 +248,7 @@
 
             {{-- Left: cities --}}
             <div>
-                <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-secondary)">
+                <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-primary)">
                     Service Area
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-6">
@@ -289,7 +289,7 @@
                          class="w-full h-full object-cover">
                 </div>
                 <div class="absolute bottom-6 left-6 rounded-xl p-4 shadow-lg bg-white border border-gray-100">
-                    <p class="text-xs font-black uppercase tracking-widest mb-1" style="color: var(--color-secondary)">On-site within 24–48 hours</p>
+                    <p class="text-xs font-black uppercase tracking-widest mb-1" style="color: var(--color-primary)">On-site within 24–48 hours</p>
                     <p class="text-xs text-gray-500 max-w-[160px] leading-snug">Available for expedited emergency inspections across South Florida.</p>
                 </div>
             </div>

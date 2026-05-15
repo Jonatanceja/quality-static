@@ -144,7 +144,7 @@
 
             {{-- Copy --}}
             <div>
-                <span class="text-sm font-bold uppercase tracking-widest block mb-3" style="color: var(--color-secondary)">
+                <span class="text-sm font-bold uppercase tracking-widest block mb-3" style="color: var(--color-primary)">
                     Our Heritage
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-6">
@@ -158,7 +158,7 @@
                 <p class="text-gray-500 leading-relaxed mb-8">
                     Our team specializes in critical regional evaluations, including comprehensive
                     <span class="font-semibold" style="color: var(--color-primary)">4-Point Inspections</span> and
-                    <span class="font-semibold" style="color: var(--color-secondary)">Wind Mitigation</span> reports.
+                    <span class="font-semibold" style="color: var(--color-primary)">Wind Mitigation</span> reports.
                     These aren't just boxes to check. They are the safeguards of your property's longevity
                     and your family's safety.
                 </p>

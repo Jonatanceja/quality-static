@@ -6,7 +6,7 @@
 
         {{-- Page header --}}
         <div class="text-center max-w-2xl mx-auto mb-20">
-            <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-secondary)">
+            <span class="text-sm font-semibold uppercase tracking-widest" style="color: var(--color-primary)">
                 Our Credentials
             </span>
             <h1 class="mt-3 text-4xl sm:text-5xl font-black text-gray-900">

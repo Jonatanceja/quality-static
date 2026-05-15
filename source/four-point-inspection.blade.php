@@ -46,7 +46,7 @@
 
             {{-- Left: text + bullets --}}
             <div>
-                <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-secondary)">
+                <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-primary)">
                     Insurance Requirements
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-6">
@@ -113,7 +113,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
         <div class="text-center mb-16">
-            <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-secondary)">
+            <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-primary)">
                 What We Inspect
             </span>
             <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Detailed Systems Breakdown</h2>
@@ -242,7 +242,7 @@
 
             {{-- Left: cities --}}
             <div>
-                <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-secondary)">
+                <span class="text-xs font-bold uppercase tracking-widest block mb-3" style="color: var(--color-primary)">
                     Service Area
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-6">
