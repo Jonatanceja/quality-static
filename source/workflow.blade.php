@@ -67,8 +67,11 @@
                 {{-- Step 1: Booking Online --}}
                 <div id="step-1" class="rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
                     <div class="aspect-[16/6] overflow-hidden">
-                        <img src="/assets/images/booking-online.jpg" alt="Booking online"
-                             class="w-full h-full object-cover object-center">
+                        <picture>
+                            <source srcset="/assets/images/booking-online.webp" type="image/webp">
+                            <img src="/assets/images/booking-online.jpg" alt="Booking online"
+                                 class="w-full h-full object-cover object-center">
+                        </picture>
                     </div>
                     <div class="p-8">
                         <div class="flex items-center gap-2 mb-4">
@@ -96,8 +99,11 @@
                 {{-- Step 2: On-site Inspection --}}
                 <div id="step-2" class="rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
                     <div class="aspect-[16/6] overflow-hidden">
-                        <img src="/assets/images/on-site.jpg" alt="On-site inspection"
-                             class="w-full h-full object-cover object-center">
+                        <picture>
+                            <source srcset="/assets/images/on-site.webp" type="image/webp">
+                            <img src="/assets/images/on-site.jpg" alt="On-site inspection"
+                                 class="w-full h-full object-cover object-center">
+                        </picture>
                     </div>
                     <div class="p-8">
                         <div class="flex items-center gap-2 mb-4">
@@ -130,8 +136,11 @@
                 {{-- Step 3: Digital Report Generation --}}
                 <div id="step-3" class="rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
                     <div class="aspect-[16/6] overflow-hidden relative">
-                        <img src="/assets/images/report-generation.jpg" alt="Report generation"
-                             class="w-full h-full object-cover">
+                        <picture>
+                            <source srcset="/assets/images/report-generation.webp" type="image/webp">
+                            <img src="/assets/images/report-generation.jpg" alt="Report generation"
+                                 class="w-full h-full object-cover">
+                        </picture>
                     </div>
                     <div class="p-8">
                         <div class="flex items-center gap-2 mb-4">

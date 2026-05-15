@@ -6,7 +6,10 @@
 <section class="relative min-h-[65vh] flex items-end overflow-hidden pt-20">
 
     <div class="absolute inset-0">
-        <img src="/assets/images/wind-mitigation-service.jpg" alt="" class="w-full h-full object-cover object-center" aria-hidden="true">
+        <picture>
+            <source srcset="/assets/images/wind-mitigation-service.webp" type="image/webp">
+            <img src="/assets/images/wind-mitigation-service.jpg" alt="" class="w-full h-full object-cover object-center" aria-hidden="true">
+        </picture>
     </div>
     <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.45) 65%, rgba(0,0,0,0.20) 100%);"></div>
 
@@ -98,8 +101,11 @@
             {{-- Right: inspector photo + badge --}}
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden aspect-[4/5]">
-                    <img src="/assets/images/unlock-credits-wind.jpg" alt="Wind mitigation inspection"
-                         class="w-full h-full object-cover object-center">
+                    <picture>
+                        <source srcset="/assets/images/unlock-credits-wind.webp" type="image/webp">
+                        <img src="/assets/images/unlock-credits-wind.jpg" alt="Wind mitigation inspection"
+                             class="w-full h-full object-cover object-center">
+                    </picture>
                     <div class="absolute inset-0"
                          style="background: linear-gradient(to top, rgba(0,0,0,0.25) 0%, transparent 55%)"></div>
                 </div>
@@ -285,8 +291,11 @@
             {{-- Right: map --}}
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden aspect-square">
-                    <img src="/assets/images/map.jpg" alt="South Florida service area map"
-                         class="w-full h-full object-cover">
+                    <picture>
+                        <source srcset="/assets/images/map.webp" type="image/webp">
+                        <img src="/assets/images/map.jpg" alt="South Florida service area map"
+                             class="w-full h-full object-cover">
+                    </picture>
                 </div>
                 <div class="absolute bottom-6 left-6 rounded-xl p-4 shadow-lg bg-white border border-gray-100">
                     <p class="text-xs font-black uppercase tracking-widest mb-1" style="color: var(--color-primary)">On-site within 24–48 hours</p>

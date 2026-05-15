@@ -75,11 +75,14 @@
                 ['file' => '8-buy-back-guarantee-logo-1545244415.png',               'title' => 'Buy-Back Guarantee'],
             ] as $cert)
                 <div class="flex flex-col items-center text-center p-5 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
-                    <img
-                        src="/assets/images/certifications/home/{{ $cert['file'] }}"
-                        alt="{{ $cert['title'] }}"
-                        class="h-24 w-auto object-contain mb-3"
-                    >
+                    <picture>
+                        <source srcset="/assets/images/certifications/home/{{ str_replace('.png', '.webp', $cert['file']) }}" type="image/webp">
+                        <img
+                            src="/assets/images/certifications/home/{{ $cert['file'] }}"
+                            alt="{{ $cert['title'] }}"
+                            class="h-24 w-auto object-contain mb-3"
+                        >
+                    </picture>
                     <p class="text-sm font-semibold text-gray-700 leading-tight">{{ $cert['title'] }}</p>
                 </div>
             @endforeach

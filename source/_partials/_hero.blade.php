@@ -2,7 +2,10 @@
 
     {{-- Background photo --}}
     <div class="absolute inset-0">
-        <img src="/assets/images/flor.jpg" alt="" class="w-full h-full object-cover object-center" aria-hidden="true">
+        <picture>
+            <source srcset="/assets/images/flor.webp" type="image/webp">
+            <img src="/assets/images/flor.jpg" alt="" class="w-full h-full object-cover object-center" aria-hidden="true">
+        </picture>
     </div>
 
     {{-- Gradient colour overlay --}}

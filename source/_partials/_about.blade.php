@@ -43,8 +43,11 @@
 
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden aspect-[4/3] relative">
-                    <img src="/assets/images/home.jpg" alt="Home inspection"
-                         class="w-full h-full object-cover object-center">
+                    <picture>
+                        <source srcset="/assets/images/home.webp" type="image/webp">
+                        <img src="/assets/images/home.jpg" alt="Home inspection"
+                             class="w-full h-full object-cover object-center">
+                    </picture>
                     {{-- subtle dark scrim so the text stays readable --}}
                     <div class="absolute inset-0"
                          style="background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.10) 60%, transparent 100%)"></div>

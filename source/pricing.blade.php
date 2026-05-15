@@ -156,8 +156,11 @@
 
             {{-- Photo --}}
             <div class="relative rounded-2xl overflow-hidden min-h-[360px]">
-                <img src="/assets/images/precision-authority.jpg" alt="South Florida home inspection"
-                     class="w-full h-full object-cover object-center absolute inset-0">
+                <picture>
+                    <source srcset="/assets/images/precision-authority.webp" type="image/webp">
+                    <img src="/assets/images/precision-authority.jpg" alt="South Florida home inspection"
+                         class="w-full h-full object-cover object-center absolute inset-0">
+                </picture>
                 <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.10) 60%, transparent 100%)"></div>
                 <div class="absolute bottom-8 left-8 right-8">
                     <p class="text-2xl font-black text-white uppercase tracking-wide leading-tight">Precision Authority</p>

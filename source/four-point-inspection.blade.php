@@ -6,7 +6,10 @@
 <section class="relative min-h-[65vh] flex items-end overflow-hidden pt-20">
 
     <div class="absolute inset-0">
-        <img src="/assets/images/4-point-service.jpg" alt="" class="w-full h-full object-cover object-center" aria-hidden="true">
+        <picture>
+            <source srcset="/assets/images/4-point-service.webp" type="image/webp">
+            <img src="/assets/images/4-point-service.jpg" alt="" class="w-full h-full object-cover object-center" aria-hidden="true">
+        </picture>
     </div>
     <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.45) 65%, rgba(0,0,0,0.20) 100%);"></div>
 
@@ -92,8 +95,11 @@
             {{-- Right: inspector photo --}}
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden aspect-[4/5]">
-                    <img src="/assets/images/4-point.jpg" alt="4-Point inspection in progress"
-                         class="w-full h-full object-cover">
+                    <picture>
+                        <source srcset="/assets/images/4-point.webp" type="image/webp">
+                        <img src="/assets/images/4-point.jpg" alt="4-Point inspection in progress"
+                             class="w-full h-full object-cover">
+                    </picture>
                     <div class="absolute inset-0"
                          style="background: linear-gradient(to top, rgba(0,0,0,0.25) 0%, transparent 55%)"></div>
                 </div>
@@ -275,8 +281,11 @@
             {{-- Right: map --}}
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden aspect-square">
-                    <img src="/assets/images/map.jpg" alt="South Florida service area map"
-                         class="w-full h-full object-cover">
+                    <picture>
+                        <source srcset="/assets/images/map.webp" type="image/webp">
+                        <img src="/assets/images/map.jpg" alt="South Florida service area map"
+                             class="w-full h-full object-cover">
+                    </picture>
                 </div>
                 <div class="absolute bottom-6 left-6 rounded-xl p-4 shadow-lg text-white text-center"
                      style="background-color: var(--color-tertiary)">

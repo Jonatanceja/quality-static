@@ -6,7 +6,10 @@
 <section class="relative min-h-[60vh] flex items-end overflow-hidden pt-20">
 
     <div class="absolute inset-0">
-        <img src="/assets/images/about.jpg" alt="" class="w-full h-full object-cover object-center" aria-hidden="true">
+        <picture>
+            <source srcset="/assets/images/about.webp" type="image/webp">
+            <img src="/assets/images/about.jpg" alt="" class="w-full h-full object-cover object-center" aria-hidden="true">
+        </picture>
     </div>
     <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.35) 70%, transparent 100%);"></div>
 
@@ -129,8 +132,11 @@
             {{-- Photo + badge --}}
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden aspect-[4/5]">
-                    <img src="/assets/images/diego-cano.jpeg" alt="Calidad Inspections inspector"
-                         class="w-full h-full object-cover object-bottom">
+                    <picture>
+                        <source srcset="/assets/images/diego-cano.webp" type="image/webp">
+                        <img src="/assets/images/diego-cano.jpeg" alt="Calidad Inspections inspector"
+                             class="w-full h-full object-cover object-bottom">
+                    </picture>
                     <div class="absolute inset-0"
                          style="background: linear-gradient(to top, rgba(0,0,0,0.30) 0%, transparent 60%)"></div>
                 </div>

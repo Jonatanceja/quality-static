@@ -78,11 +78,14 @@
                     ['file' => 'spanish-internachi-certified-professional-inspector-cpi-logo-1587592481.png','title' => 'Spanish Certified Professional Inspector'],
                 ] as $cert)
                     <div class="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-100 hover:border-[var(--color-secondary)] hover:shadow-md transition-all duration-300">
-                        <img
-                            src="/assets/images/certifications/certifications-page/{{ $cert['file'] }}"
-                            alt="{{ $cert['title'] }}"
-                            class="h-20 w-auto object-contain mb-3"
-                        >
+                        <picture>
+                            <source srcset="/assets/images/certifications/certifications-page/{{ str_replace('.png', '.webp', $cert['file']) }}" type="image/webp">
+                            <img
+                                src="/assets/images/certifications/certifications-page/{{ $cert['file'] }}"
+                                alt="{{ $cert['title'] }}"
+                                class="h-20 w-auto object-contain mb-3"
+                            >
+                        </picture>
                         <p class="text-xs font-semibold text-gray-600 leading-tight">{{ $cert['title'] }}</p>
                     </div>
                 @endforeach
