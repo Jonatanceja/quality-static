@@ -7,6 +7,9 @@
 npm-debug.log
 hot
 
+# Raw page import (source material, integrated into source/)
+/calidad-site10/
+
 # Optional ignores
 # /build_staging/
 # /build_production/

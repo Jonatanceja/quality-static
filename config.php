@@ -15,11 +15,21 @@ return [
     'nav' => [
         ['label' => 'Services', 'href' => '/services', 'children' => [
             ['label' => 'All Services', 'href' => '/services'],
+            ['label' => 'Full Home Inspection', 'href' => '/full-home-inspection'],
             ['label' => '4-Point Inspection', 'href' => '/four-point-inspection'],
             ['label' => 'Wind Mitigation', 'href' => '/wind-mitigation'],
+            ['label' => 'Roof Certification', 'href' => '/roof-certification'],
+            ['label' => 'Condo Inspection', 'href' => '/condo-inspection'],
+            ['label' => 'Pre-Listing Inspection', 'href' => '/pre-listing-inspection'],
         ]],
+        ['label' => 'Areas', 'href' => '/areas'],
         ['label' => 'About', 'href' => '/about'],
-        ['label' => 'Workflow', 'href' => '/workflow'],
+        ['label' => 'Resources', 'href' => '/workflow', 'children' => [
+            ['label' => 'Workflow', 'href' => '/workflow'],
+            ['label' => 'For Realtors', 'href' => '/realtors'],
+            ['label' => 'Reviews', 'href' => '/reviews'],
+            ['label' => 'FAQ', 'href' => '/faq'],
+        ]],
         ['label' => 'Pricing', 'href' => '/pricing'],
         ['label' => 'Contact', 'href' => '/contact'],
     ],

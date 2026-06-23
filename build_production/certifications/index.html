@@ -17,8 +17,8 @@
         <meta name="twitter:image" content="https://qualityinspections.info/assets/images/quality-inspections-og.jpg">
         <title>Calidad Inspections</title>
         <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
-                <link rel="stylesheet" href="/assets/build/assets/main-D3KEbo3i.css">
-        <script defer type="module" src="/assets/build/assets/main-ByNcbeG_.js"></script>
+        <script type="module" src="http://[::1]:5175/@vite/client"></script>        <link rel="stylesheet" href="http://[::1]:5175/source/_assets/css/main.css">
+        <script defer type="module" src="http://[::1]:5175/source/_assets/js/main.js"></script>
     </head>
     <body class="text-gray-900 font-sans antialiased">
         <div
@@ -76,6 +76,13 @@
                                                   style="background-color: var(--color-secondary)"></span>
                                             All Services
                                         </a>
+                                                                            <a href="/full-home-inspection"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Full Home Inspection
+                                        </a>
                                                                             <a href="/four-point-inspection"
                                            @click="open = false"
                                            class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
@@ -90,7 +97,34 @@
                                                   style="background-color: var(--color-secondary)"></span>
                                             Wind Mitigation
                                         </a>
+                                                                            <a href="/roof-certification"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Roof Certification
+                                        </a>
+                                                                            <a href="/condo-inspection"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Condo Inspection
+                                        </a>
+                                                                            <a href="/pre-listing-inspection"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Pre-Listing Inspection
+                                        </a>
                                                                     </div>
+                            </li>
+                                                                                                <li>
+                                <a href="/areas"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Areas
+                                </a>
                             </li>
                                                                                                 <li>
                                 <a href="/about"
@@ -98,11 +132,58 @@
                                     About
                                 </a>
                             </li>
-                                                                                                <li>
-                                <a href="/workflow"
-                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
-                                    Workflow
-                                </a>
+                                                                                                <li x-data="{ open: false }" class="relative">
+                                <button
+                                    @click="open = !open"
+                                    @click.outside="open = false"
+                                    class="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200"
+                                >
+                                    Resources
+                                    <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div
+                                    x-show="open"
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 -translate-y-1"
+                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                    x-transition:leave="transition ease-in duration-100"
+                                    x-transition:leave-start="opacity-100 translate-y-0"
+                                    x-transition:leave-end="opacity-0 -translate-y-1"
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50"
+                                    x-cloak
+                                >
+                                                                            <a href="/workflow"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Workflow
+                                        </a>
+                                                                            <a href="/realtors"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            For Realtors
+                                        </a>
+                                                                            <a href="/reviews"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Reviews
+                                        </a>
+                                                                            <a href="/faq"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            FAQ
+                                        </a>
+                                                                    </div>
                             </li>
                                                                                                 <li>
                                 <a href="/pricing"
@@ -174,6 +255,15 @@
                                         </a>
                                     </li>
                                                                     <li>
+                                        <a href="/full-home-inspection"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Full Home Inspection
+                                        </a>
+                                    </li>
+                                                                    <li>
                                         <a href="/four-point-inspection"
                                            @click="mobileOpen = false"
                                            class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
@@ -191,7 +281,41 @@
                                             Wind Mitigation
                                         </a>
                                     </li>
+                                                                    <li>
+                                        <a href="/roof-certification"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Roof Certification
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/condo-inspection"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Condo Inspection
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/pre-listing-inspection"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Pre-Listing Inspection
+                                        </a>
+                                    </li>
                                                             </ul>
+                        </li>
+                                                                                <li>
+                            <a href="/areas"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Areas
+                            </a>
                         </li>
                                                                                 <li>
                             <a href="/about"
@@ -200,12 +324,53 @@
                                 About
                             </a>
                         </li>
-                                                                                <li>
-                            <a href="/workflow"
-                               @click="mobileOpen = false"
-                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
-                                Workflow
-                            </a>
+                                                                                <li x-data="{ open: false }">
+                            <button @click="open = !open"
+                                    class="flex items-center justify-between w-full py-2.5 text-sm font-medium text-gray-600">
+                                Resources
+                                <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <ul x-show="open" class="pl-4 pb-2 space-y-1" x-cloak>
+                                                                    <li>
+                                        <a href="/workflow"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Workflow
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/realtors"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            For Realtors
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/reviews"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Reviews
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/faq"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            FAQ
+                                        </a>
+                                    </li>
+                                                            </ul>
                         </li>
                                                                                 <li>
                             <a href="/pricing"
@@ -283,6 +448,13 @@
                                                   style="background-color: var(--color-secondary)"></span>
                                             All Services
                                         </a>
+                                                                            <a href="/full-home-inspection"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Full Home Inspection
+                                        </a>
                                                                             <a href="/four-point-inspection"
                                            @click="open = false"
                                            class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
@@ -297,7 +469,34 @@
                                                   style="background-color: var(--color-secondary)"></span>
                                             Wind Mitigation
                                         </a>
+                                                                            <a href="/roof-certification"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Roof Certification
+                                        </a>
+                                                                            <a href="/condo-inspection"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Condo Inspection
+                                        </a>
+                                                                            <a href="/pre-listing-inspection"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Pre-Listing Inspection
+                                        </a>
                                                                     </div>
+                            </li>
+                                                                                                <li>
+                                <a href="/areas"
+                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                    Areas
+                                </a>
                             </li>
                                                                                                 <li>
                                 <a href="/about"
@@ -305,11 +504,58 @@
                                     About
                                 </a>
                             </li>
-                                                                                                <li>
-                                <a href="/workflow"
-                                   class="text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
-                                    Workflow
-                                </a>
+                                                                                                <li x-data="{ open: false }" class="relative">
+                                <button
+                                    @click="open = !open"
+                                    @click.outside="open = false"
+                                    class="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200"
+                                >
+                                    Resources
+                                    <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div
+                                    x-show="open"
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 -translate-y-1"
+                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                    x-transition:leave="transition ease-in duration-100"
+                                    x-transition:leave-start="opacity-100 translate-y-0"
+                                    x-transition:leave-end="opacity-0 -translate-y-1"
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50"
+                                    x-cloak
+                                >
+                                                                            <a href="/workflow"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Workflow
+                                        </a>
+                                                                            <a href="/realtors"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            For Realtors
+                                        </a>
+                                                                            <a href="/reviews"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Reviews
+                                        </a>
+                                                                            <a href="/faq"
+                                           @click="open = false"
+                                           class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-600 hover:text-[var(--color-primary)] hover:bg-gray-50 transition-colors duration-150">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            FAQ
+                                        </a>
+                                                                    </div>
                             </li>
                                                                                                 <li>
                                 <a href="/pricing"
@@ -381,6 +627,15 @@
                                         </a>
                                     </li>
                                                                     <li>
+                                        <a href="/full-home-inspection"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Full Home Inspection
+                                        </a>
+                                    </li>
+                                                                    <li>
                                         <a href="/four-point-inspection"
                                            @click="mobileOpen = false"
                                            class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
@@ -398,7 +653,41 @@
                                             Wind Mitigation
                                         </a>
                                     </li>
+                                                                    <li>
+                                        <a href="/roof-certification"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Roof Certification
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/condo-inspection"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Condo Inspection
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/pre-listing-inspection"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Pre-Listing Inspection
+                                        </a>
+                                    </li>
                                                             </ul>
+                        </li>
+                                                                                <li>
+                            <a href="/areas"
+                               @click="mobileOpen = false"
+                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
+                                Areas
+                            </a>
                         </li>
                                                                                 <li>
                             <a href="/about"
@@ -407,12 +696,53 @@
                                 About
                             </a>
                         </li>
-                                                                                <li>
-                            <a href="/workflow"
-                               @click="mobileOpen = false"
-                               class="block py-2.5 text-sm font-medium text-gray-600 hover:text-[var(--color-primary)] transition-colors duration-200">
-                                Workflow
-                            </a>
+                                                                                <li x-data="{ open: false }">
+                            <button @click="open = !open"
+                                    class="flex items-center justify-between w-full py-2.5 text-sm font-medium text-gray-600">
+                                Resources
+                                <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="open ? 'rotate-180' : ''"
+                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <ul x-show="open" class="pl-4 pb-2 space-y-1" x-cloak>
+                                                                    <li>
+                                        <a href="/workflow"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Workflow
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/realtors"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            For Realtors
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/reviews"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            Reviews
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/faq"
+                                           @click="mobileOpen = false"
+                                           class="flex items-center gap-2 py-2 text-sm text-gray-500 hover:text-[var(--color-primary)] transition-colors">
+                                            <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                                  style="background-color: var(--color-secondary)"></span>
+                                            FAQ
+                                        </a>
+                                    </li>
+                                                            </ul>
                         </li>
                                                                                 <li>
                             <a href="/pricing"
@@ -1062,13 +1392,17 @@
                        class="text-sm text-white/70 hover:text-white transition-colors duration-200">
                         Services
                     </a>
+                                    <a href="/areas"
+                       class="text-sm text-white/70 hover:text-white transition-colors duration-200">
+                        Areas
+                    </a>
                                     <a href="/about"
                        class="text-sm text-white/70 hover:text-white transition-colors duration-200">
                         About
                     </a>
                                     <a href="/workflow"
                        class="text-sm text-white/70 hover:text-white transition-colors duration-200">
-                        Workflow
+                        Resources
                     </a>
                                     <a href="/pricing"
                        class="text-sm text-white/70 hover:text-white transition-colors duration-200">
