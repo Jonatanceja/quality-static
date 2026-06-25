@@ -3,8 +3,8 @@
 return [
     'production' => false,
     'baseUrl' => 'https://qualityinspections.info',
-    'title' => 'Calidad Inspections',
-    'description' => 'Professional home inspection services you can trust.',
+    'title' => 'Best Home Inspector in Miami-Dade, Broward, Palm Beach & South Florida',
+    'description' => 'Home, Condo, Wind Mitigation & 4-Point Inspections | Quality Inspections',
     'language' => 'en',
     'collections' => [],
 
