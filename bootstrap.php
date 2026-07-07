@@ -69,7 +69,10 @@ $events->afterBuild(function (Jigsaw $jigsaw) {
     };
 
     $body = $urls->map(function ($loc) use ($baseUrl, $priority, $changefreq, $lastmod) {
-        $url = $loc === '/' ? $baseUrl . '/' : $baseUrl . $loc;
+        // Netlify serves the canonical URL with a trailing slash, so emit /about/ not /about;
+        // otherwise every sitemap URL 301-redirects and Google skips it.
+        $url = $baseUrl . '/' . trim($loc, '/');
+        $url = rtrim($url, '/') . '/';
 
         return "  <url>"
             . "<loc>{$url}</loc>"

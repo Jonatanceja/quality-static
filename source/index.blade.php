@@ -1,3 +1,6 @@
+---
+title: "Best Home Inspector in Miami-Dade, Broward, Palm Beach & South Florida | Home, Condo, Wind Mitigation & 4-Point Inspections | Quality Inspections"
+---
 @extends('_layouts.main')
 
 @section('body')
